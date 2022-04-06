@@ -1,0 +1,7 @@
+Hallo Markus,
+dieser Text hier soll probehalber vorgelesen werden.
+Lirum larum Löffelstiel.
+Dieser Text soll lang sein, um das Verhalten von Google TTS bei langen Texten zu testen.
+Oder wie siehst du das?
+Das scheint gar nicht mal so schlecht zu funktionieren, denn wir sind jetzt schon bei über 100 Zeichen und ich will weiter rumtesten, um zu gucken, ob das mit der Kommatrennung denn auch richtig funktioniert!
+Sowas aber auch.

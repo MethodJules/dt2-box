@@ -1,0 +1,141 @@
+-- Adminer 4.7.6 MySQL dump
+
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+DROP TABLE IF EXISTS `devices`;
+CREATE TABLE `devices` (
+  `mac` char(17) COLLATE utf16_german2_ci NOT NULL,
+  `key` varchar(128) COLLATE utf16_german2_ci NOT NULL,
+  PRIMARY KEY (`mac`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_german2_ci;
+
+INSERT INTO `devices` (`mac`, `key`) VALUES
+('dc:a6:32:28:4a:6a',	'$2a$10$M5bJTk6wjjfw5e19HKAlruwwJlGu3sm1OCz1V3vtmF6kkwdEMvNba'),
+('dc:a6:32:aa:42:bc',	'$2a$10$M5bJTk6wjjfw5e19HKAlruwwJlGu3sm1OCz1V3vtmF6kkwdEMvNba');
+
+DROP TABLE IF EXISTS `meetings`;
+CREATE TABLE `meetings` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `team` int(10) unsigned NOT NULL,
+  `begin` datetime DEFAULT NULL,
+  `end` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `team` (`team`),
+  CONSTRAINT `meetings_ibfk_1` FOREIGN KEY (`team`) REFERENCES `teams` (`id`) ON DELETE NO ACTION,
+  CONSTRAINT `meetings_ibfk_2` FOREIGN KEY (`team`) REFERENCES `teams` (`id`) ON DELETE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_german2_ci;
+
+
+DROP TABLE IF EXISTS `methods`;
+CREATE TABLE `methods` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `modell` enum('ISUM') CHARACTER SET ucs2 COLLATE ucs2_german2_ci NOT NULL,
+  `phase` int(10) unsigned NOT NULL,
+  `name` varchar(100) CHARACTER SET ucs2 COLLATE ucs2_german2_ci NOT NULL,
+  `description` text CHARACTER SET ucs2 COLLATE ucs2_german2_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `phase` (`phase`),
+  CONSTRAINT `methods_ibfk_1` FOREIGN KEY (`phase`) REFERENCES `phases` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_german2_ci;
+
+
+DROP TABLE IF EXISTS `models`;
+CREATE TABLE `models` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) COLLATE utf16_german2_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_german2_ci;
+
+INSERT INTO `models` (`id`, `name`) VALUES
+(1,	'ISUM');
+
+DROP TABLE IF EXISTS `phases`;
+CREATE TABLE `phases` (
+  `uid` varchar(8) COLLATE utf16_german2_ci NOT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `number` smallint(5) unsigned NOT NULL,
+  `name` varchar(50) COLLATE utf16_german2_ci NOT NULL,
+  `description` text COLLATE utf16_german2_ci DEFAULT NULL,
+  `model` mediumint(9) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `model` (`model`),
+  CONSTRAINT `phases_ibfk_1` FOREIGN KEY (`model`) REFERENCES `models` (`id`) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_german2_ci;
+
+INSERT INTO `phases` (`uid`, `id`, `number`, `name`, `description`, `model`) VALUES
+('7e3360b9',	1,	1,	'Proleme recherchieren',	'In Phase 1 befindet man sich im Problemraum und pflegt das divergente Denken. Ziel der Phase ist es damit zunächst, das verfolgte verzwickte Problem durch möglichst viele denkbare konkrete Probleme und Herausforderungen zu konkretisieren. Zu typischen Methoden dieser Phase zählen zum Beispiel die Beobachtung von Aufgaben oder die Befragungen der Auftraggeber beziehungsweise potenziellen Kunden, und das fünfmalige Stellen der Frage: Warum?. Charakteristisch für diese Phase ist konsequente Kundenorientierung und die Entwicklung von hoher Empathie mit möglichen Zielgruppen. Anschaulich wird die Phase am Beispiel der Analyse der Anmeldung in einer Arztpraxis. Dem Anspruch des Design Thinking wird eine Literaturrecherche oder Telefonbefragung allein nicht gerecht. Stattdessen erfordert die Problemidentifikation im Design Thinking eher das Eingipsen eines \\(gesunden\\) Beins oder Arms, um die Anmeldesituation möglichst realistisch nachempfinden zu können.',	1),
+('4e4760b9',	2,	2,	'Probleme definieren',	'Phase 2 ist im Problemraum verortet und es wird konvergentes Denken betrieben. Ziel der Phase ist es, ein konkretes, konsistentes Bild der innovationstreibenden Herausforderung zu zeichnen. Zu typischen Methoden dieser Phase zählt zum Beispiel die Entwicklung von Personas. Mittels Personas werden die adressierten Zielgruppen des Design Thinking-Projekts anhand repräsentativer fiktiver Personen mit Namen, Alter, Charaktereigenschaften, Hobbys, Wohnorten etc sowie spezifischen zu lösenden Problemen beschrieben. Damit soll die Vorstellungskraft und Empathiefähigkeit der Projektteilnehmer gefördert werden. Ähnliche Vorzüge adressieren Methoden wie das Storytelling und Empathie-Maps. Indem man sich in dieser Phase zunächst der Problemdefinition widmet, wird ein häufiger Fehler von kreativitätsintensiven Projekten systematisch vermieden, der darin besteht, sich – zum Beispiel animiert durch die Kenntnis oder Faszination bestimmter technologischer Neuerungen – zu früh auf bestimmte Problemlösungen festzulegen.',	1),
+('8e2d60b9',	3,	3,	'Ideen finden',	'In Phase 3 befindet man sich im Lösungsraum und es wird divergent gedacht. Ziel der Phase ist es, zu dem aktuell durch Arbeiten im Problemraum vorgegebenen Herausforderungen möglichst viele denkbare Lösungen vorzuschlagen. Zu typischen Vorgehensweisen in dieser Phase zählen zum Beispiel die Anwendung der Kopfstandmethode, die ersten Phasen des Brainstorming \\(ohne Kritik und Auswahl\\), der Aufbau von morphologischen Kästen und die Positionierung von Merkmalskombinationen in diesen, die Sammlung von Ideen mit der 635-Methode und zahlenmäßig angepasster Varianten, die Nutzung eines Collective Notebook und/oder von Metaplanwänden und die Anwendung der Walt Disney- oder 6-Hüte- sowie der Osborne-Methode. Gemeinsames Ziel der eingesetzten Methoden ist es, auch zunächst abwegig erscheinende Vorschläge hervorzubringen. Es sind dabei Arbeitsschritte zu kombinieren, in denen Teilnehmer für sich selbst nachdenken und in denen sich die Teilnehmer gegenseitig beeinflussen.',	1),
+('8e3d60b9',	4,	4,	'Ideen auswählen',	'In Phase 4 wird im Lösungsraum konvergent denkend gearbeitet. Ziel der Phase ist es, konsistente aufeinander abgestimmte, in sich schlüssige Problemlösungsvorschläge zu erarbeiten. Für die Konstruktion widerspruchsfreier Konzepte kann auf typische Ansätze zur unternehmensmodellierung zurückgegriffen werden. Hierzu zählen verbreitete Techniken zur Konstruktion von Geschäftsmodellen \\(Business Model Canvas etc\\), zur Prozessmodellierung \\(BPMN 2 0, EPK, Petri-Netze etc\\) und für die Konzeption von Wertschöpfungsnetzwerken \\(zum Beispiel mit dem Cooperation Experience-Ansatz\\). Auch Storytelling und -boards tragen zur Veranschaulichung bei. Darüber hinaus sind spezifische Methoden zur Bewertung und Auswahl alternativer Lösungsbeiträge bzw. Vorschläge in ihrer Gänze einzusetzen. Argumentenbilanzen, Scoring-Modelle, Stärken/Schwächen- und Chancen/Risiken- Analysen kommen hierbei zum Einsatz. Die Abstimmung über Optionen kann verdeckt oder zum Beispiel in Form des Dotmocracy-Ansatzes erfolgen.',	1),
+('5e4360b9',	5,	5,	'Prototypen bauen',	'In Phase 5 ist im Implementierungsraum divergent vorzugehen. Ziel ist es, die im Lösungsraum konzipierte und ausgewählte Idee auf unterschiedliche Weise prototypisch zu testen. In frühen Projekt-Iterationen ist es ratsam, besonders schnell und aufwandsarm vorzugehen, damit unterschiedliche Prototypingansätze \\(parallel\\) verfolgt werden können und Testergebnisse für die nächste Phase der Implementierung rasch zur Verfügung stehen. Mit zunehmender Iterationsanzahl wird das Prototyping zunehmend auch aufwändiger betrieben. Das gesamte Spektrum des Prototyping ist einsetzbar: Rollenspiel, Nutzung von Spielfiguren und -steinen, Sketching, Papierprototypen, Software-Mock-ups, Simulationen, visuelle Softwareentwicklung, Markttest etc.',	1),
+('7e3b60b9',	6,	6,	'Tests beurteilen',	'In Phase 6 befindet man sich im Implementierungsraum und geht divergent vor. Die mit den unterschiedlichen Prototypen gewonnenen Erkenntnisse werden zu einem Gesamturteil zusammengefügt und es wird über das weitere Vorgehen entschieden. Soll das Design-Thinking-Projekt nicht fortgesetzt werden, so kann sich eine Einführung der Innovation im Markt bzw im Unternehmen anschließen. Die Regel sind gezielte Rücksprünge in vorangegangene Phasen. Dabei kann festgestellt werden, dass das Problem noch nicht richtig verstanden wurde oder bisher präferierte Lösungsstrategien ungeeignet sind. Das Erkennen der Notwendigkeit von Rücksprüngen kann zu jeder Zeit im Design-Thinking-Projekt erfolgen und ist jeweils als Erkenntnisgewinn positiv zu bewerten. Die Entscheidung über das weitere Vorgehen kann auch in dieser Phase durch Argumentenbilanzen, Scoring-Modelle, Stärken/Schwächen- und Chancen/Risiken-Analysen und Dotmocracy unterstützt werden.',	1);
+
+DROP TABLE IF EXISTS `phase_protocol`;
+CREATE TABLE `phase_protocol` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `team` int(10) unsigned DEFAULT NULL,
+  `model` mediumint(9) DEFAULT NULL,
+  `meeting` bigint(20) unsigned DEFAULT NULL,
+  `phase` int(10) unsigned DEFAULT NULL,
+  `method` varchar(50) COLLATE utf16_german2_ci DEFAULT NULL,
+  `begin` datetime NOT NULL,
+  `end` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `team` (`team`),
+  KEY `phase` (`phase`),
+  KEY `model` (`model`),
+  KEY `meeting` (`meeting`),
+  CONSTRAINT `phase_protocol_ibfk_3` FOREIGN KEY (`team`) REFERENCES `teams` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
+  CONSTRAINT `phase_protocol_ibfk_4` FOREIGN KEY (`phase`) REFERENCES `phases` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
+  CONSTRAINT `phase_protocol_ibfk_5` FOREIGN KEY (`model`) REFERENCES `models` (`id`) ON DELETE SET NULL,
+  CONSTRAINT `phase_protocol_ibfk_6` FOREIGN KEY (`meeting`) REFERENCES `meetings` (`id`),
+  CONSTRAINT `phase_protocol_ibfk_7` FOREIGN KEY (`meeting`) REFERENCES `meetings` (`id`) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_german2_ci;
+
+
+DROP TABLE IF EXISTS `students`;
+CREATE TABLE `students` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `first_name` text COLLATE utf16_german2_ci NOT NULL,
+  `last_name` text COLLATE utf16_german2_ci NOT NULL,
+  `matrikel` varchar(8) COLLATE utf16_german2_ci NOT NULL,
+  `team` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `team` (`team`),
+  CONSTRAINT `students_ibfk_1` FOREIGN KEY (`team`) REFERENCES `teams` (`id`) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_german2_ci;
+
+INSERT INTO `students` (`id`, `first_name`, `last_name`, `matrikel`, `team`) VALUES
+(1,	'Markus',	'Watermeyer',	'201333',	1),
+(2,	'Malisa',	'Watermeyer',	'201334',	1),
+(3,	'Jannis',	'Watermeyer',	'201335',	1),
+(4,	'Anja',	'Watermeyer',	'201336',	1),
+(5,	'Carina',	'Dach',	'201337',	2),
+(7,	'Friedhelm',	'Dach',	'201338',	2),
+(8,	'Helga',	'Dach',	'123456',	2);
+
+DROP TABLE IF EXISTS `teams`;
+CREATE TABLE `teams` (
+  `uid` char(8) CHARACTER SET utf8 COLLATE utf8_german2_ci NOT NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` text COLLATE utf16_german2_ci DEFAULT NULL,
+  `last_login` datetime DEFAULT NULL,
+  `last_logout` datetime DEFAULT NULL,
+  `last_seen` datetime DEFAULT NULL,
+  `model` mediumint(9) DEFAULT NULL,
+  `current_phase` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `current_phase` (`current_phase`),
+  KEY `model` (`model`),
+  CONSTRAINT `teams_ibfk_1` FOREIGN KEY (`current_phase`) REFERENCES `phases` (`id`) ON DELETE SET NULL,
+  CONSTRAINT `teams_ibfk_2` FOREIGN KEY (`model`) REFERENCES `models` (`id`) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_german2_ci;
+
+INSERT INTO `teams` (`uid`, `id`, `name`, `last_login`, `last_logout`, `last_seen`, `model`, `current_phase`) VALUES
+('934d1e1a',	1,	'Team Watermeyer',	'2020-12-03 18:14:16',	'2020-12-03 18:14:27',	'2020-12-03 18:14:27',	1,	3),
+('2470d62b',	2,	'Team Dach',	'2020-11-29 20:45:20',	'2020-11-29 20:49:49',	'2020-11-29 20:48:08',	1,	NULL);
+
+-- 2020-12-12 12:46:25

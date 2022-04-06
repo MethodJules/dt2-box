@@ -1,0 +1,5726 @@
+[
+    {
+        "id": "91eeb9f1.ee22b",
+        "type": "tab",
+        "label": "Connection",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c5dd90c6.564fd8",
+        "type": "tab",
+        "label": "Login",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "370e2ea9.1227aa",
+        "type": "tab",
+        "label": "Main",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "84f4021c.f97ec8",
+        "type": "tab",
+        "label": "SendTags",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "fa981f8e.ad058",
+        "type": "tab",
+        "label": "Logout",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "a4c45e0c.7652c",
+        "type": "tab",
+        "label": "Speech",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e837e78f.fd8d2",
+        "type": "tab",
+        "label": "LED Control",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "58a4f51e.4fa07c",
+        "type": "tab",
+        "label": "ReadOut",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "46b639d.9b46348",
+        "type": "tab",
+        "label": "Buttons",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "1a384a35.536d3e",
+        "type": "tab",
+        "label": "TestReader",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "5d2f93d0.4fda14",
+        "type": "ui_group",
+        "z": "",
+        "name": "RFID-RC522",
+        "tab": "a8fbcafc.563ad",
+        "order": 1,
+        "disp": true,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "a8fbcafc.563ad",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 2
+    },
+    {
+        "id": "7c56b91d.cdfa18",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "8de54496.6a5e3",
+        "type": "Cache",
+        "z": "",
+        "name": "Logout",
+        "defaultTtl": "",
+        "checkPeriod": ""
+    },
+    {
+        "id": "91fd77d8.64a09",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Music Controls",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "1dadfaf1.09dd65",
+        "type": "ui_group",
+        "z": "",
+        "name": "volume control",
+        "tab": "91fd77d8.64a09",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "6ac7700a.3cf868",
+        "type": "ui_group",
+        "z": "",
+        "name": "now playing",
+        "tab": "91fd77d8.64a09",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c3c74b97.5ed9f",
+        "type": "ui_group",
+        "z": "",
+        "name": "play controls",
+        "tab": "91fd77d8.64a09",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "54269ad7.08cc24",
+        "type": "ui_group",
+        "z": "",
+        "name": "Shutdown Pi control",
+        "tab": "91fd77d8.64a09",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "9bf1b21f.d804f",
+        "type": "Cache",
+        "z": "",
+        "name": "Team",
+        "defaultTtl": "",
+        "checkPeriod": ""
+    },
+    {
+        "id": "2e69adbe.49805a",
+        "type": "Cache",
+        "z": "",
+        "name": "TagData",
+        "defaultTtl": "",
+        "checkPeriod": ""
+    },
+    {
+        "id": "92a467bc.e0ce38",
+        "type": "Cache",
+        "z": "",
+        "name": "Phase",
+        "defaultTtl": "",
+        "checkPeriod": ""
+    },
+    {
+        "id": "156356e0.c1e8a9",
+        "type": "Cache",
+        "z": "",
+        "name": "LED",
+        "defaultTtl": "",
+        "checkPeriod": ""
+    },
+    {
+        "id": "72df7010.ad41e",
+        "type": "Cache",
+        "z": "",
+        "name": "Auth",
+        "defaultTtl": "",
+        "checkPeriod": ""
+    },
+    {
+        "id": "5f061f3d.e8df88",
+        "type": "Cache",
+        "z": "",
+        "name": "Connection",
+        "defaultTtl": "",
+        "checkPeriod": ""
+    },
+    {
+        "id": "b671dc6a.642de8",
+        "type": "exec",
+        "z": "370e2ea9.1227aa",
+        "command": "node",
+        "addpay": false,
+        "append": "/home/pi/DTDokuTool/rfidReader.js",
+        "useSpawn": "true",
+        "timer": "",
+        "oldrc": false,
+        "name": "RFID Reader",
+        "x": 410,
+        "y": 560,
+        "wires": [
+            [
+                "931ca3f2.c7dcc",
+                "2cac7f0a.703b18"
+            ],
+            [
+                "931ca3f2.c7dcc"
+            ],
+            [
+                "931ca3f2.c7dcc"
+            ]
+        ]
+    },
+    {
+        "id": "931ca3f2.c7dcc",
+        "type": "debug",
+        "z": "370e2ea9.1227aa",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "3a5c0278.89025e",
+        "type": "trigger",
+        "z": "370e2ea9.1227aa",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "250",
+        "extend": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1170,
+        "y": 480,
+        "wires": [
+            [
+                "e0f1ddd9.9918f"
+            ]
+        ]
+    },
+    {
+        "id": "e0f1ddd9.9918f",
+        "type": "rpi-gpio out",
+        "z": "370e2ea9.1227aa",
+        "name": "Beeper",
+        "pin": "7",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 1340,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "d2511a3f.a86b18",
+        "type": "debug",
+        "z": "370e2ea9.1227aa",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "1bd04cd0.4eed13",
+        "type": "exec",
+        "z": "c5dd90c6.564fd8",
+        "command": "node",
+        "addpay": false,
+        "append": "/home/pi/DTDokuTool/rfidReader.js",
+        "useSpawn": "true",
+        "timer": "",
+        "oldrc": false,
+        "name": "RFID Reader",
+        "x": 430,
+        "y": 360,
+        "wires": [
+            [
+                "490253fc.4ae5b4",
+                "76f00f68.fe7188",
+                "3efc05e7.8b1bf2"
+            ],
+            [
+                "490253fc.4ae5b4"
+            ],
+            [
+                "490253fc.4ae5b4"
+            ]
+        ]
+    },
+    {
+        "id": "490253fc.4ae5b4",
+        "type": "debug",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "94d4bf48.9cac9",
+        "type": "trigger",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "250",
+        "extend": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1010,
+        "y": 180,
+        "wires": [
+            [
+                "48f6ffde.61f3b"
+            ]
+        ]
+    },
+    {
+        "id": "48f6ffde.61f3b",
+        "type": "rpi-gpio out",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "pin": "7",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 1200,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d1b1f4ec.6dcb48",
+        "type": "function",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "func": "let rfidData = msg.payload\n\nif (rfidData.statusChanged && rfidData.uid !== '') {\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 820,
+        "y": 180,
+        "wires": [
+            [
+                "94d4bf48.9cac9",
+                "207185b5.43522a"
+            ]
+        ]
+    },
+    {
+        "id": "76f00f68.fe7188",
+        "type": "json",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 670,
+        "y": 180,
+        "wires": [
+            [
+                "d1b1f4ec.6dcb48"
+            ]
+        ]
+    },
+    {
+        "id": "207185b5.43522a",
+        "type": "debug",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "681de121.167368",
+        "type": "http request",
+        "z": "c5dd90c6.564fd8",
+        "name": "Login Team",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://markusw.ddns.net:3000/loginTeam",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1830,
+        "y": 340,
+        "wires": [
+            [
+                "a20b6fa8.4d978",
+                "f4f681f.bc2f48"
+            ]
+        ]
+    },
+    {
+        "id": "94a5d617.f99cb8",
+        "type": "json",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 910,
+        "y": 340,
+        "wires": [
+            [
+                "6af954da.de5954"
+            ]
+        ]
+    },
+    {
+        "id": "c5b4460a.4e0fa",
+        "type": "exec",
+        "z": "c5dd90c6.564fd8",
+        "command": "node /home/pi/DTDokuTool/welcomeLoop.js",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "oldrc": false,
+        "name": "Welcome-Loop",
+        "x": 620,
+        "y": 460,
+        "wires": [
+            [
+                "4c8d6976.73b598"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f83f3620.612058",
+        "type": "link in",
+        "z": "370e2ea9.1227aa",
+        "name": "Hauptphase",
+        "links": [
+            "e25af0ae.4b339",
+            "c3b7625e.1647"
+        ],
+        "x": 75,
+        "y": 560,
+        "wires": [
+            [
+                "951a4919.cb666",
+                "f352e4dc.55812",
+                "9e29f0b4.5b7338",
+                "10deb8f3.0e77df"
+            ]
+        ]
+    },
+    {
+        "id": "80c407b8.cd44a",
+        "type": "rpi-gpio in",
+        "z": "46b639d.9b46348",
+        "name": "Button Gelb",
+        "pin": "40",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "x": 250,
+        "y": 120,
+        "wires": [
+            [
+                "174f89cc.3060e6"
+            ]
+        ]
+    },
+    {
+        "id": "6bfe9c61.3f8264",
+        "type": "rpi-gpio in",
+        "z": "46b639d.9b46348",
+        "name": "Button Blau",
+        "pin": "38",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "6265ac7f.3a73e4"
+            ]
+        ]
+    },
+    {
+        "id": "573d5067.3292f8",
+        "type": "rpi-gpio in",
+        "z": "46b639d.9b46348",
+        "name": "Button Grün",
+        "pin": "36",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "x": 250,
+        "y": 240,
+        "wires": [
+            [
+                "2830bc3e.7a4e9c"
+            ]
+        ]
+    },
+    {
+        "id": "93f545c3.7271b8",
+        "type": "rpi-gpio in",
+        "z": "46b639d.9b46348",
+        "name": "Button Rot",
+        "pin": "32",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "x": 240,
+        "y": 300,
+        "wires": [
+            [
+                "821a9d08.1bde48"
+            ]
+        ]
+    },
+    {
+        "id": "821a9d08.1bde48",
+        "type": "function",
+        "z": "46b639d.9b46348",
+        "name": "",
+        "func": "if (msg.payload === 0) {\n    msg.payload = 'Der rote Button wurde gedrückt';\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 460,
+        "y": 300,
+        "wires": [
+            [
+                "6d5ec603.a8ca5"
+            ]
+        ]
+    },
+    {
+        "id": "2830bc3e.7a4e9c",
+        "type": "function",
+        "z": "46b639d.9b46348",
+        "name": "",
+        "func": "if (msg.payload === 0) {\n    msg.payload = 'Der grüne Button wurde gedrückt';\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 460,
+        "y": 240,
+        "wires": [
+            [
+                "6d5ec603.a8ca5"
+            ]
+        ]
+    },
+    {
+        "id": "6265ac7f.3a73e4",
+        "type": "function",
+        "z": "46b639d.9b46348",
+        "name": "",
+        "func": "if (msg.payload === 0) {\n    msg.payload = 'Der blaue Button wurde gedrückt';\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 460,
+        "y": 180,
+        "wires": [
+            [
+                "6d5ec603.a8ca5"
+            ]
+        ]
+    },
+    {
+        "id": "174f89cc.3060e6",
+        "type": "function",
+        "z": "46b639d.9b46348",
+        "name": "",
+        "func": "if (msg.payload === 0) {\n    msg.payload = 'Der gelbe Button wurde gedrückt';\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 460,
+        "y": 120,
+        "wires": [
+            [
+                "6d5ec603.a8ca5"
+            ]
+        ]
+    },
+    {
+        "id": "4cd1a423.db42cc",
+        "type": "rpi-gpio out",
+        "z": "e837e78f.fd8d2",
+        "name": "Blau LED",
+        "pin": "29",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 480,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "39ac54c6.a14bf4",
+        "type": "function",
+        "z": "e837e78f.fd8d2",
+        "name": "Ein",
+        "func": "msg.payload = 1;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "abed881f.b0e958"
+            ]
+        ]
+    },
+    {
+        "id": "fb173d21.fff9d",
+        "type": "rpi-gpio out",
+        "z": "e837e78f.fd8d2",
+        "name": "Grün LED",
+        "pin": "31",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 1150,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "eb54ded8.3d46a8",
+        "type": "rpi-gpio out",
+        "z": "e837e78f.fd8d2",
+        "name": "Rot LED",
+        "pin": "33",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 480,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "6fd707fa.9b3d58",
+        "type": "rpi-gpio out",
+        "z": "e837e78f.fd8d2",
+        "name": "Rot LED",
+        "pin": "33",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 1140,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "abed881f.b0e958",
+        "type": "rpi-gpio out",
+        "z": "e837e78f.fd8d2",
+        "name": "Grün LED",
+        "pin": "31",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 490,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "d244c444.3c4ee8",
+        "type": "function",
+        "z": "e837e78f.fd8d2",
+        "name": "Ein",
+        "func": "msg.payload = 1;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 330,
+        "y": 120,
+        "wires": [
+            [
+                "4cd1a423.db42cc"
+            ]
+        ]
+    },
+    {
+        "id": "c83e15f9.33fc78",
+        "type": "function",
+        "z": "e837e78f.fd8d2",
+        "name": "Ein",
+        "func": "msg.payload = 1;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 330,
+        "y": 360,
+        "wires": [
+            [
+                "eb54ded8.3d46a8"
+            ]
+        ]
+    },
+    {
+        "id": "fa0eff10.91fe48",
+        "type": "function",
+        "z": "e837e78f.fd8d2",
+        "name": "Aus",
+        "func": "msg.payload = 0;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 990,
+        "y": 300,
+        "wires": [
+            [
+                "fb173d21.fff9d"
+            ]
+        ]
+    },
+    {
+        "id": "9bcffca3.64f868",
+        "type": "function",
+        "z": "e837e78f.fd8d2",
+        "name": "Aus",
+        "func": "msg.payload = 0;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 990,
+        "y": 140,
+        "wires": [
+            [
+                "6fd707fa.9b3d58"
+            ]
+        ]
+    },
+    {
+        "id": "a1a329ca.fa25f",
+        "type": "link in",
+        "z": "e837e78f.fd8d2",
+        "name": "LED Blau ein",
+        "links": [
+            "ddf9642f.a09bc8",
+            "2c17aa20.cddb36",
+            "1d882768.924019",
+            "2345023f.58369e",
+            "25ad4bf7.b655ec",
+            "c110c2fb.03f0b",
+            "248e5950.aef73e",
+            "4236891e.5b00d",
+            "a539eda0.19b08",
+            "4ee57a2d.0292e4"
+        ],
+        "x": 195,
+        "y": 120,
+        "wires": [
+            [
+                "d244c444.3c4ee8",
+                "6a0ec257.7763bc"
+            ]
+        ]
+    },
+    {
+        "id": "159cc6d3.99e7f1",
+        "type": "link in",
+        "z": "e837e78f.fd8d2",
+        "name": "LED grün ein",
+        "links": [
+            "dd05c1fa.3b8748",
+            "e237d571.c0474",
+            "fe9cadd1.3d9a58",
+            "48676e61.d958",
+            "dd946b7a.1c9208",
+            "5cae1206.66dc8c",
+            "2ced9932.874a66",
+            "8511097f.39628",
+            "d352ba5.93ae9c8",
+            "75c5c18f.24f198",
+            "e516514a.bfd468",
+            "49709571.360f5c",
+            "58638fd6.696b88",
+            "c3b7625e.1647",
+            "ffc08263.fc7e5",
+            "e093623e.deea68"
+        ],
+        "x": 195,
+        "y": 240,
+        "wires": [
+            [
+                "39ac54c6.a14bf4",
+                "ac4f8ecc.f4dc4"
+            ]
+        ]
+    },
+    {
+        "id": "a03fa074.c74a18",
+        "type": "link in",
+        "z": "e837e78f.fd8d2",
+        "name": "LED grün aus",
+        "links": [
+            "912acb91.532ab8",
+            "37e64b76.a43764",
+            "3446cd85.d04ac2",
+            "25ad4bf7.b655ec",
+            "c110c2fb.03f0b",
+            "b647d301.78a118",
+            "248e5950.aef73e",
+            "923798df.4c6e5",
+            "bf6b0339.640d88",
+            "880dd996.092318",
+            "4cfc3690.9fa9a8",
+            "16a46dc5.2b058a",
+            "6a0ec257.7763bc",
+            "7640b671.24eb98",
+            "a539eda0.19b08",
+            "6307c7e0.32083",
+            "4ee57a2d.0292e4"
+        ],
+        "x": 855,
+        "y": 300,
+        "wires": [
+            [
+                "fa0eff10.91fe48"
+            ]
+        ]
+    },
+    {
+        "id": "216feaec.6ddb6e",
+        "type": "link in",
+        "z": "e837e78f.fd8d2",
+        "name": "LED rot ein",
+        "links": [
+            "b647d301.78a118",
+            "74096272.39089c",
+            "923798df.4c6e5",
+            "bf6b0339.640d88",
+            "880dd996.092318",
+            "badfe59e.0e11c8",
+            "235a7136.620856",
+            "bad2179b.ab7598",
+            "81630548.da383",
+            "216cbbde.e6303c",
+            "6307c7e0.32083"
+        ],
+        "x": 195,
+        "y": 360,
+        "wires": [
+            [
+                "c83e15f9.33fc78",
+                "7640b671.24eb98"
+            ]
+        ]
+    },
+    {
+        "id": "bde9a33e.acae3",
+        "type": "link in",
+        "z": "e837e78f.fd8d2",
+        "name": "LED rot aus",
+        "links": [
+            "48676e61.d958",
+            "dd946b7a.1c9208",
+            "248e5950.aef73e",
+            "2ced9932.874a66",
+            "8511097f.39628",
+            "d352ba5.93ae9c8",
+            "75c5c18f.24f198",
+            "e516514a.bfd468",
+            "49709571.360f5c",
+            "a0f38c7f.39f91",
+            "6a0ec257.7763bc",
+            "ac4f8ecc.f4dc4",
+            "a539eda0.19b08",
+            "e093623e.deea68",
+            "4ee57a2d.0292e4"
+        ],
+        "x": 855,
+        "y": 140,
+        "wires": [
+            [
+                "9bcffca3.64f868"
+            ]
+        ]
+    },
+    {
+        "id": "dd05c1fa.3b8748",
+        "type": "link out",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "links": [
+            "159cc6d3.99e7f1",
+            "93a21868.9fbc88",
+            "bde9a33e.acae3"
+        ],
+        "x": 235,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "6949958b.d5c704",
+        "type": "exec",
+        "z": "fa981f8e.ad058",
+        "command": "sudo systemctl restart nodered.service",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Restart",
+        "x": 1340,
+        "y": 320,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "cfa4d33b.072998",
+        "type": "exec",
+        "z": "fa981f8e.ad058",
+        "command": "sudo shutdown -h now",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Shutdown",
+        "x": 1350,
+        "y": 160,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "3367f62a.7c88ba",
+        "type": "Cache out",
+        "z": "c5dd90c6.564fd8",
+        "name": "Team",
+        "cache": "9bf1b21f.d804f",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "team",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 2330,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "6ec502dd.9259ac",
+        "type": "function",
+        "z": "370e2ea9.1227aa",
+        "name": "Topic für Cache",
+        "func": "msg.topic = 'Team';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 620,
+        "wires": [
+            [
+                "377b9099.21b1a8",
+                "a7715828.afbda",
+                "97f4728d.270248"
+            ]
+        ]
+    },
+    {
+        "id": "d871ae77.d2b53",
+        "type": "debug",
+        "z": "370e2ea9.1227aa",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1430,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "f48ee9d0.a4682",
+        "type": "switch",
+        "z": "370e2ea9.1227aa",
+        "name": "Logout?",
+        "property": "logout",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1480,
+        "y": 620,
+        "wires": [
+            [
+                "310ce0ac.1823f8",
+                "a84804f0.a9e9c8"
+            ],
+            [
+                "ab98ac24.c78db8",
+                "a7bb9a6e.3513e8"
+            ]
+        ]
+    },
+    {
+        "id": "67c728bd.79148",
+        "type": "function",
+        "z": "370e2ea9.1227aa",
+        "name": "Logout?",
+        "func": "msg.logout = false;\nif (msg.team !== undefined) {\n    teamData = msg.team;\n    tagData = msg.payload;\n    if (teamData.uid === tagData.uid) {\n        msg.logout = true;\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1320,
+        "y": 620,
+        "wires": [
+            [
+                "83f1045.de13978",
+                "c2b4b7ef.a2f9f8",
+                "f48ee9d0.a4682",
+                "d3e1c879.b6cd8"
+            ]
+        ]
+    },
+    {
+        "id": "aac5c690.3a68d8",
+        "type": "debug",
+        "z": "370e2ea9.1227aa",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "team",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1430,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "377b9099.21b1a8",
+        "type": "debug",
+        "z": "370e2ea9.1227aa",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "a7715828.afbda",
+        "type": "debug",
+        "z": "370e2ea9.1227aa",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "team",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "83f1045.de13978",
+        "type": "debug",
+        "z": "370e2ea9.1227aa",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1630,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "c2b4b7ef.a2f9f8",
+        "type": "debug",
+        "z": "370e2ea9.1227aa",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "team",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1630,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "ab98ac24.c78db8",
+        "type": "link out",
+        "z": "370e2ea9.1227aa",
+        "name": "LogoutHauptphaseOUT",
+        "links": [
+            "14fad54d.26a9fb"
+        ],
+        "x": 1635,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "14fad54d.26a9fb",
+        "type": "link in",
+        "z": "fa981f8e.ad058",
+        "name": "Logout",
+        "links": [
+            "ab98ac24.c78db8"
+        ],
+        "x": 145,
+        "y": 180,
+        "wires": [
+            [
+                "b2738fa4.5922a",
+                "291f4c27.7ffde4",
+                "3d233c3b.528b74"
+            ]
+        ]
+    },
+    {
+        "id": "6d5ec603.a8ca5",
+        "type": "exec",
+        "z": "46b639d.9b46348",
+        "command": "~/DTDokuTool/sprachausgabe.sh",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Sprachausgabe",
+        "x": 740,
+        "y": 200,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b2738fa4.5922a",
+        "type": "function",
+        "z": "fa981f8e.ad058",
+        "name": "Text für TTS",
+        "func": "msg.payload = 'Wollen Sie wirklich beenden. Für Herunterfahren drücken Sie Rot, für Logout Grün!'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 310,
+        "y": 120,
+        "wires": [
+            [
+                "a11b47fc.d92318"
+            ]
+        ]
+    },
+    {
+        "id": "a11b47fc.d92318",
+        "type": "link out",
+        "z": "fa981f8e.ad058",
+        "name": "",
+        "links": [
+            "2ec0c957.2d992e",
+            "ac070014.97d12"
+        ],
+        "x": 445,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "291f4c27.7ffde4",
+        "type": "exec",
+        "z": "fa981f8e.ad058",
+        "command": "node /home/pi/DTDokuTool/logoutLoop",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "LogoutLoop",
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "1c67c4e7.3229a3",
+                "1fffe470.5b7584"
+            ],
+            [
+                "1c67c4e7.3229a3"
+            ],
+            [
+                "1c67c4e7.3229a3"
+            ]
+        ]
+    },
+    {
+        "id": "c9ba7a3c.6769d8",
+        "type": "switch",
+        "z": "370e2ea9.1227aa",
+        "name": "Neuer Status?",
+        "property": "payload.statusChanged",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 760,
+        "y": 540,
+        "wires": [
+            [
+                "2abee989.bf884e"
+            ],
+            [
+                "d4744c.06e9abb8",
+                "6ec502dd.9259ac"
+            ]
+        ]
+    },
+    {
+        "id": "2cac7f0a.703b18",
+        "type": "json",
+        "z": "370e2ea9.1227aa",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 600,
+        "y": 540,
+        "wires": [
+            [
+                "c9ba7a3c.6769d8"
+            ]
+        ]
+    },
+    {
+        "id": "951a4919.cb666",
+        "type": "function",
+        "z": "370e2ea9.1227aa",
+        "name": "Text für TTS",
+        "func": "msg.payload = 'Ihr könnt jetzt die Phasen-Figuren nutzen und auf den Reader stellen.'\n    + 'Phasen und Methoden werden automatisch protokolliert!';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "d06304fb.ebd11"
+            ]
+        ]
+    },
+    {
+        "id": "d06304fb.ebd11",
+        "type": "link out",
+        "z": "370e2ea9.1227aa",
+        "name": "Begrüße in Hauptphase",
+        "links": [
+            "2ec0c957.2d992e",
+            "ac070014.97d12"
+        ],
+        "x": 375,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d4744c.06e9abb8",
+        "type": "switch",
+        "z": "370e2ea9.1227aa",
+        "name": "Tag?",
+        "property": "payload.uid",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 970,
+        "y": 480,
+        "wires": [
+            [
+                "3a5c0278.89025e",
+                "d2511a3f.a86b18"
+            ]
+        ]
+    },
+    {
+        "id": "3bd11271.facb1e",
+        "type": "debug",
+        "z": "370e2ea9.1227aa",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1670,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8452561.ba56028",
+        "type": "function",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "func": "if (msg.payload) {\n    \n    const teamData = msg.payload;\n    if (teamData.team !== undefined && teamData.team !== '') {\n        \n        let members = teamData.members;\n        let text = 'Herzlich willkommen ' + teamData.team + '..';\n        \n        for (let i = 0; members.length > 0; i++) {\n            const member = members.pop();\n            if (members.length >= 1) {\n                text += ' ' + member;\n            } else {\n                text += ' und ' + member;\n            }\n        }\n        \n        const msg1 = {\n            payload: text,\n            continue: true\n        }\n        \n        const msg2 = {\n            topic: 'Team',\n            team: teamData\n        }\n        \n        return [msg1, msg2];\n        \n    } else {\n        \n        let text = 'Das ist leider keine registrierte Teamkarte!'    \n    \n        const msg1 = {\n            payload: text,\n            continue: false\n        }\n        \n        const msg2 = {}\n        \n        return [msg1, msg2];\n    }\n}\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2120,
+        "y": 340,
+        "wires": [
+            [
+                "dd661d9f.ed6e3",
+                "7bddf448.aa2094",
+                "589e611a.3f4208"
+            ],
+            [
+                "3367f62a.7c88ba",
+                "dd661d9f.ed6e3"
+            ]
+        ]
+    },
+    {
+        "id": "f240edc5.958cb8",
+        "type": "function",
+        "z": "370e2ea9.1227aa",
+        "name": "5 Sekunden her?",
+        "func": "if (msg.lastSend + 5000 <= Date.now()) {\n    msg.lastSend = Date.now();\n    msg.topic = 'lastSend'\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1370,
+        "y": 360,
+        "wires": [
+            [
+                "3bd11271.facb1e",
+                "509800bf.70c6e8",
+                "812306fc.5cbd1"
+            ]
+        ]
+    },
+    {
+        "id": "4bc3437c.3017fc",
+        "type": "Cache in",
+        "z": "370e2ea9.1227aa",
+        "name": "LastSend",
+        "cache": "2e69adbe.49805a",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "lastSend",
+        "useString": false,
+        "outputs": 1,
+        "x": 1180,
+        "y": 360,
+        "wires": [
+            [
+                "f240edc5.958cb8"
+            ]
+        ]
+    },
+    {
+        "id": "2abee989.bf884e",
+        "type": "function",
+        "z": "370e2ea9.1227aa",
+        "name": "Topic für Cache",
+        "func": "msg.topic = 'lastSend';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 360,
+        "wires": [
+            [
+                "4bc3437c.3017fc"
+            ]
+        ]
+    },
+    {
+        "id": "509800bf.70c6e8",
+        "type": "Cache out",
+        "z": "370e2ea9.1227aa",
+        "name": "LastSend",
+        "cache": "2e69adbe.49805a",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "lastSend",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 1660,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "d3e1c879.b6cd8",
+        "type": "debug",
+        "z": "370e2ea9.1227aa",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "logout",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1630,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "1c67c4e7.3229a3",
+        "type": "debug",
+        "z": "fa981f8e.ad058",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "1fffe470.5b7584",
+        "type": "json",
+        "z": "fa981f8e.ad058",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 510,
+        "y": 240,
+        "wires": [
+            [
+                "fa1fdcb5.ac4378",
+                "1bf735ae.6b5242"
+            ]
+        ]
+    },
+    {
+        "id": "fa1fdcb5.ac4378",
+        "type": "switch",
+        "z": "fa981f8e.ad058",
+        "name": "",
+        "property": "payload.pressedButton",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "red",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "green",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "none",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 700,
+        "y": 240,
+        "wires": [
+            [
+                "3d4de7ca.76cea8",
+                "b54a801c.807b28",
+                "b13733a7.c1cb88"
+            ],
+            [
+                "b39b8b84.85bfe",
+                "246d68aa.b16168",
+                "b13733a7.c1cb88"
+            ],
+            [
+                "f78728ef.a15d28",
+                "386e6242.be1b5e"
+            ]
+        ]
+    },
+    {
+        "id": "b39b8b84.85bfe",
+        "type": "debug",
+        "z": "fa981f8e.ad058",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "3d4de7ca.76cea8",
+        "type": "debug",
+        "z": "fa981f8e.ad058",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "1bf735ae.6b5242",
+        "type": "debug",
+        "z": "fa981f8e.ad058",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "b54a801c.807b28",
+        "type": "function",
+        "z": "fa981f8e.ad058",
+        "name": "Text für TTS",
+        "func": "msg.payload = 'Das System wird heruntergefahren. Auf Wiedersehen!';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 950,
+        "y": 200,
+        "wires": [
+            [
+                "bd32db0.f09a2a8",
+                "9a230e2.a0e557"
+            ]
+        ]
+    },
+    {
+        "id": "246d68aa.b16168",
+        "type": "function",
+        "z": "fa981f8e.ad058",
+        "name": "Text für TTS",
+        "func": "msg.payload = 'Logout wird ausgeführt! Auf Wiedersehen!';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 950,
+        "y": 280,
+        "wires": [
+            [
+                "e3339407.6e7f58",
+                "9a230e2.a0e557"
+            ]
+        ]
+    },
+    {
+        "id": "bd32db0.f09a2a8",
+        "type": "delay",
+        "z": "fa981f8e.ad058",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "6",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 1160,
+        "y": 160,
+        "wires": [
+            [
+                "cfa4d33b.072998"
+            ]
+        ]
+    },
+    {
+        "id": "e3339407.6e7f58",
+        "type": "delay",
+        "z": "fa981f8e.ad058",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "6",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 1160,
+        "y": 320,
+        "wires": [
+            [
+                "6949958b.d5c704"
+            ]
+        ]
+    },
+    {
+        "id": "9a230e2.a0e557",
+        "type": "link out",
+        "z": "fa981f8e.ad058",
+        "name": "",
+        "links": [
+            "2ec0c957.2d992e",
+            "ac070014.97d12"
+        ],
+        "x": 1115,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "db01f74b.705908",
+        "type": "Cache out",
+        "z": "370e2ea9.1227aa",
+        "name": "Logout Cache",
+        "cache": "8de54496.6a5e3",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "logout",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 1900,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "10b9093c.113357",
+        "type": "Cache in",
+        "z": "370e2ea9.1227aa",
+        "name": "Logout Cache",
+        "cache": "8de54496.6a5e3",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "logout",
+        "useString": false,
+        "outputs": 1,
+        "x": 1900,
+        "y": 540,
+        "wires": [
+            [
+                "3d0ad502.d97f9a",
+                "812306fc.5cbd1"
+            ]
+        ]
+    },
+    {
+        "id": "cc8773ee.72651",
+        "type": "Cache out",
+        "z": "fa981f8e.ad058",
+        "name": "Logout Cache",
+        "cache": "8de54496.6a5e3",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "logout",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 1160,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "f78728ef.a15d28",
+        "type": "function",
+        "z": "fa981f8e.ad058",
+        "name": "Topic für Cache",
+        "func": "msg.topic = 'logout';\nmsg.logout = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 960,
+        "y": 440,
+        "wires": [
+            [
+                "cc8773ee.72651"
+            ]
+        ]
+    },
+    {
+        "id": "ba1d7b2e.4701",
+        "type": "Cache out",
+        "z": "370e2ea9.1227aa",
+        "name": "Logout Cache",
+        "cache": "8de54496.6a5e3",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "logout",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 460,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "f352e4dc.55812",
+        "type": "function",
+        "z": "370e2ea9.1227aa",
+        "name": "Topic für Cache",
+        "func": "msg.topic = 'logout';\nmsg.logout = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 260,
+        "y": 680,
+        "wires": [
+            [
+                "ba1d7b2e.4701"
+            ]
+        ]
+    },
+    {
+        "id": "310ce0ac.1823f8",
+        "type": "debug",
+        "z": "370e2ea9.1227aa",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1690,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "3d0ad502.d97f9a",
+        "type": "debug",
+        "z": "370e2ea9.1227aa",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2130,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "a84804f0.a9e9c8",
+        "type": "function",
+        "z": "370e2ea9.1227aa",
+        "name": "Topic für Cache",
+        "func": "msg.topic = 'logout';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1700,
+        "y": 540,
+        "wires": [
+            [
+                "10b9093c.113357"
+            ]
+        ]
+    },
+    {
+        "id": "a7bb9a6e.3513e8",
+        "type": "function",
+        "z": "370e2ea9.1227aa",
+        "name": "Topic für Cache",
+        "func": "msg.topic = 'logout'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1700,
+        "y": 660,
+        "wires": [
+            [
+                "db01f74b.705908"
+            ]
+        ]
+    },
+    {
+        "id": "386e6242.be1b5e",
+        "type": "debug",
+        "z": "fa981f8e.ad058",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "a20b6fa8.4d978",
+        "type": "json",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1990,
+        "y": 340,
+        "wires": [
+            [
+                "8452561.ba56028"
+            ]
+        ]
+    },
+    {
+        "id": "dd661d9f.ed6e3",
+        "type": "debug",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2350,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "f4f681f.bc2f48",
+        "type": "debug",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2030,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "bc3da8c3.660cb8",
+        "type": "file",
+        "z": "c5dd90c6.564fd8",
+        "name": "StartReading",
+        "filename": "/home/pi/DTDokuTool/temp/continueRFID.tmp",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 260,
+        "y": 360,
+        "wires": [
+            [
+                "1bd04cd0.4eed13"
+            ]
+        ]
+    },
+    {
+        "id": "6af954da.de5954",
+        "type": "switch",
+        "z": "c5dd90c6.564fd8",
+        "name": "Neuer Status?",
+        "property": "payload.statusChanged",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1080,
+        "y": 340,
+        "wires": [
+            [
+                "9a219d8f.68f868"
+            ]
+        ]
+    },
+    {
+        "id": "d90b59da.4d91d",
+        "type": "http request",
+        "z": "fa981f8e.ad058",
+        "name": "Logout",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://markusw.ddns.net:3000/logout",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1420,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9a219d8f.68f868",
+        "type": "switch",
+        "z": "c5dd90c6.564fd8",
+        "name": "Tag?",
+        "property": "payload.uid",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1230,
+        "y": 340,
+        "wires": [
+            [
+                "aaa938f3.6aaf98"
+            ]
+        ]
+    },
+    {
+        "id": "b0b43c21.6324c8",
+        "type": "Cache out",
+        "z": "370e2ea9.1227aa",
+        "name": "Phase",
+        "cache": "92a467bc.e0ce38",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "phase",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 430,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "9e29f0b4.5b7338",
+        "type": "function",
+        "z": "370e2ea9.1227aa",
+        "name": "Topic für Cache",
+        "func": "msg.topic = 'phase';\nmsg.phase = {\n    uid: '',\n    model: '',\n    no: 0,\n    phase: '',\n    methods: [],\n    description: '',\n    timestamp: Date.now()\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 260,
+        "y": 740,
+        "wires": [
+            [
+                "b0b43c21.6324c8"
+            ]
+        ]
+    },
+    {
+        "id": "74d91cbb.7b99c4",
+        "type": "debug",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3090,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "14fedc12.5def44",
+        "type": "debug",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3090,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "4134da45.d200cc",
+        "type": "debug",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3090,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "2345023f.58369e",
+        "type": "link out",
+        "z": "c5dd90c6.564fd8",
+        "name": "LEDs schalten",
+        "links": [
+            "a03fa074.c74a18",
+            "a1a329ca.fa25f",
+            "bde9a33e.acae3"
+        ],
+        "x": 2575,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "c3b7625e.1647",
+        "type": "link out",
+        "z": "c5dd90c6.564fd8",
+        "name": "LEDs schalten",
+        "links": [
+            "159cc6d3.99e7f1",
+            "f83f3620.612058"
+        ],
+        "x": 3235,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "2ec0c957.2d992e",
+        "type": "link in",
+        "z": "a4c45e0c.7652c",
+        "name": "TTS",
+        "links": [
+            "109db266.1c2bf6",
+            "2cb54a44.fee71e",
+            "d38b42e4.41903",
+            "4862986e.f1b858",
+            "f0067705.b2c108",
+            "7e68b177.926268",
+            "4c8d6976.73b598",
+            "3d3f7fd3.417fa8",
+            "a11b47fc.d92318",
+            "d06304fb.ebd11",
+            "9a230e2.a0e557",
+            "77b07d8.0f0ba04",
+            "54b7d7e3.323ad8",
+            "226c218e.b16396",
+            "248e5950.aef73e",
+            "62d94aa.700bbb4",
+            "513bf74.0b6f708",
+            "58638fd6.696b88",
+            "9ba609aa.43191",
+            "7f595991.013a58",
+            "8cd58275.34cc78"
+        ],
+        "x": 155,
+        "y": 180,
+        "wires": [
+            [
+                "c7455efe.a0cab",
+                "fb26a033.ddca3"
+            ]
+        ]
+    },
+    {
+        "id": "92056ff.7fb091",
+        "type": "exec",
+        "z": "a4c45e0c.7652c",
+        "command": "node ",
+        "addpay": false,
+        "append": "~/DTDokuTool/googleTTS.js",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Sprachausgabe",
+        "x": 760,
+        "y": 180,
+        "wires": [
+            [
+                "808ff3c6.d996f8",
+                "5f0e07a3.824dd"
+            ],
+            [
+                "3fb3074.5eb0778"
+            ],
+            [
+                "9fd4b4e3.e9b9b"
+            ]
+        ]
+    },
+    {
+        "id": "808ff3c6.d996f8",
+        "type": "debug",
+        "z": "a4c45e0c.7652c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "3fb3074.5eb0778",
+        "type": "debug",
+        "z": "a4c45e0c.7652c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "9fd4b4e3.e9b9b",
+        "type": "debug",
+        "z": "a4c45e0c.7652c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "6017062c.87fa1",
+        "type": "link in",
+        "z": "58a4f51e.4fa07c",
+        "name": "Vorlesen",
+        "links": [
+            "cdc12cfb.b3a8d8",
+            "e7459ffd.eba6f"
+        ],
+        "x": 125,
+        "y": 160,
+        "wires": [
+            [
+                "92004a62.13473",
+                "24f96e92.34616a"
+            ]
+        ]
+    },
+    {
+        "id": "92004a62.13473",
+        "type": "function",
+        "z": "58a4f51e.4fa07c",
+        "name": "",
+        "func": "msg.payload = 'Wenn die Beschreibung vorgelesen werden soll, jetzt grün drücken!'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 240,
+        "y": 160,
+        "wires": [
+            [
+                "77b07d8.0f0ba04",
+                "d6f667e6.d503",
+                "9de2bfb3.30b8d8"
+            ]
+        ]
+    },
+    {
+        "id": "77b07d8.0f0ba04",
+        "type": "link out",
+        "z": "58a4f51e.4fa07c",
+        "name": "",
+        "links": [
+            "2ec0c957.2d992e",
+            "ac070014.97d12"
+        ],
+        "x": 375,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d6f667e6.d503",
+        "type": "exec",
+        "z": "58a4f51e.4fa07c",
+        "command": "node /home/pi/DTDokuTool/readLoop.js",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "ReadLoop",
+        "x": 430,
+        "y": 160,
+        "wires": [
+            [
+                "610b72a5.8d69fc",
+                "662181e2.dc1768"
+            ],
+            [
+                "662181e2.dc1768"
+            ],
+            [
+                "662181e2.dc1768"
+            ]
+        ]
+    },
+    {
+        "id": "662181e2.dc1768",
+        "type": "debug",
+        "z": "58a4f51e.4fa07c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "610b72a5.8d69fc",
+        "type": "json",
+        "z": "58a4f51e.4fa07c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 650,
+        "y": 160,
+        "wires": [
+            [
+                "cbd15219.06598",
+                "b9fab3a2.b870c"
+            ]
+        ]
+    },
+    {
+        "id": "cbd15219.06598",
+        "type": "switch",
+        "z": "58a4f51e.4fa07c",
+        "name": "",
+        "property": "payload.pressedButton",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "green",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 840,
+        "y": 160,
+        "wires": [
+            [
+                "c49723e.1cf8be",
+                "7c18161.b9891e8"
+            ]
+        ]
+    },
+    {
+        "id": "b9fab3a2.b870c",
+        "type": "debug",
+        "z": "58a4f51e.4fa07c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "c49723e.1cf8be",
+        "type": "debug",
+        "z": "58a4f51e.4fa07c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "phase",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "7c18161.b9891e8",
+        "type": "function",
+        "z": "58a4f51e.4fa07c",
+        "name": "",
+        "func": "msg.payload = 'Vorlesen gestartet. Zum Abbrechen rot drücken!' + msg.phase.description;\nmsg.read = true;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1040,
+        "y": 160,
+        "wires": [
+            [
+                "d59e44ae.7dc0f8",
+                "226c218e.b16396"
+            ]
+        ]
+    },
+    {
+        "id": "d59e44ae.7dc0f8",
+        "type": "debug",
+        "z": "58a4f51e.4fa07c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1250,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "226c218e.b16396",
+        "type": "link out",
+        "z": "58a4f51e.4fa07c",
+        "name": "",
+        "links": [
+            "2ec0c957.2d992e",
+            "ac070014.97d12"
+        ],
+        "x": 1195,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "fb26a033.ddca3",
+        "type": "file",
+        "z": "a4c45e0c.7652c",
+        "name": "Schreibe Text-Datei",
+        "filename": "/home/pi/DTDokuTool/temp/vorleseText.txt",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 340,
+        "y": 180,
+        "wires": [
+            [
+                "d5ccff2c.f1a9b",
+                "1d882768.924019"
+            ]
+        ]
+    },
+    {
+        "id": "7bddf448.aa2094",
+        "type": "file",
+        "z": "c5dd90c6.564fd8",
+        "name": "Schreibe Text-Datei",
+        "filename": "/home/pi/DTDokuTool/temp/vorleseText.txt",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 2380,
+        "y": 320,
+        "wires": [
+            [
+                "64b53c31.6be00c"
+            ]
+        ]
+    },
+    {
+        "id": "e6ed9294.f2343",
+        "type": "exec",
+        "z": "c5dd90c6.564fd8",
+        "command": "node ",
+        "addpay": false,
+        "append": "~/DTDokuTool/googleTTS.js",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Sprachausgabe",
+        "x": 2840,
+        "y": 320,
+        "wires": [
+            [
+                "74d91cbb.7b99c4",
+                "1c5b8d92.9988aa"
+            ],
+            [
+                "14fedc12.5def44"
+            ],
+            [
+                "4134da45.d200cc"
+            ]
+        ]
+    },
+    {
+        "id": "c7455efe.a0cab",
+        "type": "debug",
+        "z": "a4c45e0c.7652c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "66d367ba.36fbf",
+        "type": "inject",
+        "z": "91eeb9f1.ee22b",
+        "name": "Starter",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "15",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "Hallo, ich bin bereit. Bitte loggt euch mit eurer Teamkarte ein!",
+        "payloadType": "str",
+        "x": 120,
+        "y": 260,
+        "wires": [
+            [
+                "7de4b588.583f84",
+                "8ab5e451.d672f8"
+            ]
+        ]
+    },
+    {
+        "id": "3ef67e75.6316da",
+        "type": "link in",
+        "z": "c5dd90c6.564fd8",
+        "name": "Login",
+        "links": [
+            "ad136cd9.e687b8",
+            "214688c9.ff17e"
+        ],
+        "x": 95,
+        "y": 380,
+        "wires": [
+            [
+                "dd05c1fa.3b8748",
+                "bc3da8c3.660cb8",
+                "c07f685e.23c53",
+                "943e4168.423eb"
+            ]
+        ]
+    },
+    {
+        "id": "7de4b588.583f84",
+        "type": "http request",
+        "z": "91eeb9f1.ee22b",
+        "name": "Check Connection",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://markusw.ddns.net:3000/checkConnection",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 350,
+        "y": 260,
+        "wires": [
+            [
+                "f5714904.1c473",
+                "ddb02ebf.75afb8"
+            ]
+        ]
+    },
+    {
+        "id": "f5714904.1c473",
+        "type": "switch",
+        "z": "91eeb9f1.ee22b",
+        "name": "Connection OK?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "OK",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 590,
+        "y": 260,
+        "wires": [
+            [
+                "f9823a21.b1bd08",
+                "8e7b9b77.ba4cf"
+            ],
+            [
+                "c868902a.0132"
+            ]
+        ]
+    },
+    {
+        "id": "1e3c882e.98ac9",
+        "type": "function",
+        "z": "91eeb9f1.ee22b",
+        "name": "",
+        "func": "msg.payload = 'Keine Verbindung zum Server möglich.';\nmsg.topic = null;\nif (msg.authOld !== null) {\n    msg.topic = 'Auth';\n    msg.auth = {\n        accessToken: '',\n        expireTime: 0\n    };\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 520,
+        "y": 420,
+        "wires": [
+            [
+                "9096da00.9dddf",
+                "81630548.da383",
+                "fa7e2c8c.1fc26",
+                "bb5fac59.b9a13",
+                "e6396874.6b1b18"
+            ]
+        ]
+    },
+    {
+        "id": "81630548.da383",
+        "type": "link out",
+        "z": "91eeb9f1.ee22b",
+        "name": "CheckConnection Failed OUT",
+        "links": [
+            "216feaec.6ddb6e",
+            "2ec0c957.2d992e"
+        ],
+        "x": 675,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "64b53c31.6be00c",
+        "type": "exec",
+        "z": "c5dd90c6.564fd8",
+        "command": "killall mplayer",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Stoppe Player",
+        "x": 2640,
+        "y": 320,
+        "wires": [
+            [
+                "e6ed9294.f2343"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d5ccff2c.f1a9b",
+        "type": "exec",
+        "z": "a4c45e0c.7652c",
+        "command": "killall mplayer",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Stoppe Player",
+        "x": 560,
+        "y": 180,
+        "wires": [
+            [
+                "92056ff.7fb091"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1c5b8d92.9988aa",
+        "type": "switch",
+        "z": "c5dd90c6.564fd8",
+        "name": "Login OK?",
+        "property": "continue",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 3090,
+        "y": 300,
+        "wires": [
+            [
+                "c3b7625e.1647",
+                "842b5d5b.a355e"
+            ],
+            [
+                "10e7a36b.4125e5"
+            ]
+        ]
+    },
+    {
+        "id": "10e7a36b.4125e5",
+        "type": "link out",
+        "z": "c5dd90c6.564fd8",
+        "name": "LEDs schalten",
+        "links": [
+            "70e1728b.eef5f4"
+        ],
+        "x": 3235,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "589e611a.3f4208",
+        "type": "switch",
+        "z": "c5dd90c6.564fd8",
+        "name": "Login erfolgreich?",
+        "property": "continue",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2390,
+        "y": 140,
+        "wires": [
+            [
+                "2345023f.58369e",
+                "20555e95.a1999a",
+                "bb9be48d.473808",
+                "ad39e68c.bf122"
+            ],
+            [
+                "216cbbde.e6303c"
+            ]
+        ]
+    },
+    {
+        "id": "216cbbde.e6303c",
+        "type": "link out",
+        "z": "c5dd90c6.564fd8",
+        "name": "LEDs schalten",
+        "links": [
+            "70e1728b.eef5f4"
+        ],
+        "x": 2575,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "4c8d6976.73b598",
+        "type": "link out",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "links": [
+            "2ec0c957.2d992e",
+            "ac070014.97d12"
+        ],
+        "x": 775,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "1d882768.924019",
+        "type": "link out",
+        "z": "a4c45e0c.7652c",
+        "name": "LEDs schalten",
+        "links": [
+            "a03fa074.c74a18",
+            "a1a329ca.fa25f",
+            "bde9a33e.acae3"
+        ],
+        "x": 515,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "9ef5fc74.76eb98",
+        "type": "switch",
+        "z": "a4c45e0c.7652c",
+        "name": "",
+        "property": "LED",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "red",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "green",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "blue",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1400,
+        "y": 120,
+        "wires": [
+            [
+                "74096272.39089c"
+            ],
+            [
+                "5cae1206.66dc8c"
+            ],
+            [
+                "4236891e.5b00d"
+            ]
+        ]
+    },
+    {
+        "id": "71080345.9ed7ec",
+        "type": "Cache in",
+        "z": "a4c45e0c.7652c",
+        "name": "LED Cache",
+        "cache": "156356e0.c1e8a9",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "LED",
+        "useString": false,
+        "outputs": 1,
+        "x": 1230,
+        "y": 120,
+        "wires": [
+            [
+                "9ef5fc74.76eb98"
+            ]
+        ]
+    },
+    {
+        "id": "5f0e07a3.824dd",
+        "type": "function",
+        "z": "a4c45e0c.7652c",
+        "name": "Setze Topic für Cache",
+        "func": "msg.topic = 'LED'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1020,
+        "y": 120,
+        "wires": [
+            [
+                "71080345.9ed7ec"
+            ]
+        ]
+    },
+    {
+        "id": "74096272.39089c",
+        "type": "link out",
+        "z": "a4c45e0c.7652c",
+        "name": "",
+        "links": [
+            "216feaec.6ddb6e",
+            "93a21868.9fbc88",
+            "a03fa074.c74a18"
+        ],
+        "x": 1515,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "5cae1206.66dc8c",
+        "type": "link out",
+        "z": "a4c45e0c.7652c",
+        "name": "",
+        "links": [
+            "159cc6d3.99e7f1",
+            "93a21868.9fbc88",
+            "bde9a33e.acae3"
+        ],
+        "x": 1515,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "4236891e.5b00d",
+        "type": "link out",
+        "z": "a4c45e0c.7652c",
+        "name": "",
+        "links": [
+            "a03fa074.c74a18",
+            "a1a329ca.fa25f",
+            "bde9a33e.acae3"
+        ],
+        "x": 1515,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d26fd32e.8eb6a",
+        "type": "exec",
+        "z": "91eeb9f1.ee22b",
+        "command": "node /home/pi/DTDokuTool/getLoginData.js",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Hole Login Daten",
+        "x": 1370,
+        "y": 260,
+        "wires": [
+            [
+                "e11b853d.7ed3a",
+                "5660b775.5ec8e"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a492727e.0d5068",
+        "type": "Cache out",
+        "z": "91eeb9f1.ee22b",
+        "name": "Auth Cache",
+        "cache": "72df7010.ad41e",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "auth",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 2210,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e11b853d.7ed3a",
+        "type": "function",
+        "z": "91eeb9f1.ee22b",
+        "name": "Create Body",
+        "func": "msg.payload = JSON.parse(msg.payload);\nmsg.auth = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1590,
+        "y": 260,
+        "wires": [
+            [
+                "f46d60e1.42d3b8",
+                "9edc7a03.b8751"
+            ]
+        ]
+    },
+    {
+        "id": "214688c9.ff17e",
+        "type": "link out",
+        "z": "91eeb9f1.ee22b",
+        "name": "CheckConnection OUT",
+        "links": [
+            "3ef67e75.6316da"
+        ],
+        "x": 2335,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "5660b775.5ec8e",
+        "type": "debug",
+        "z": "91eeb9f1.ee22b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1590,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "aaa938f3.6aaf98",
+        "type": "function",
+        "z": "c5dd90c6.564fd8",
+        "name": "Set Topic",
+        "func": "if (msg.connection) {\n    msg.topic = 'Auth';\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1360,
+        "y": 340,
+        "wires": [
+            [
+                "4f72d2d7.67608c",
+                "1b512baa.cf376c"
+            ]
+        ]
+    },
+    {
+        "id": "4f72d2d7.67608c",
+        "type": "Cache in",
+        "z": "c5dd90c6.564fd8",
+        "name": "Auth Cache",
+        "cache": "72df7010.ad41e",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "auth",
+        "useString": false,
+        "outputs": 1,
+        "x": 1510,
+        "y": 340,
+        "wires": [
+            [
+                "6526a2d0.0ff63c",
+                "14c7354f.0632b3"
+            ]
+        ]
+    },
+    {
+        "id": "6526a2d0.0ff63c",
+        "type": "function",
+        "z": "c5dd90c6.564fd8",
+        "name": "Set Token",
+        "func": "const token = msg.auth.accessToken;\nmsg.headers = {\n    Authorization: \"Bearer \" + token\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1670,
+        "y": 340,
+        "wires": [
+            [
+                "681de121.167368"
+            ]
+        ]
+    },
+    {
+        "id": "f46d60e1.42d3b8",
+        "type": "http request",
+        "z": "91eeb9f1.ee22b",
+        "name": "Login Device",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://markusw.ddns.net:3000/login",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1770,
+        "y": 260,
+        "wires": [
+            [
+                "fa8d8a.56a2b278",
+                "29d577d8.ef29d"
+            ]
+        ]
+    },
+    {
+        "id": "29d577d8.ef29d",
+        "type": "function",
+        "z": "91eeb9f1.ee22b",
+        "name": "Set Cache Data",
+        "func": "msg.newStart = true;\nif (msg.authOld !== null) {\n    msg.newStart = false;\n}\n\nmsg.topic = 'Auth';\nmsg.auth.accessToken = JSON.parse(msg.payload).accessToken;\nmsg.auth.expireTime = JSON.parse(msg.payload).expireTime;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1980,
+        "y": 260,
+        "wires": [
+            [
+                "a492727e.0d5068",
+                "6a863ba4.5ab8fc",
+                "b47ee29d.d14a1",
+                "37194af9.03cafe"
+            ]
+        ]
+    },
+    {
+        "id": "6a863ba4.5ab8fc",
+        "type": "debug",
+        "z": "91eeb9f1.ee22b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "auth",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2200,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "14c7354f.0632b3",
+        "type": "debug",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "auth",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1700,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "9edc7a03.b8751",
+        "type": "debug",
+        "z": "91eeb9f1.ee22b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1790,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "fa8d8a.56a2b278",
+        "type": "debug",
+        "z": "91eeb9f1.ee22b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1990,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "9de2bfb3.30b8d8",
+        "type": "delay",
+        "z": "58a4f51e.4fa07c",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 570,
+        "y": 360,
+        "wires": [
+            [
+                "58307e08.7aa458"
+            ]
+        ]
+    },
+    {
+        "id": "58307e08.7aa458",
+        "type": "file",
+        "z": "58a4f51e.4fa07c",
+        "name": "Stoppe Button-Aktivität",
+        "filename": "/home/pi/DTDokuTool/temp/vorlesen.tmp",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "delete",
+        "encoding": "none",
+        "x": 790,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d233c3b.528b74",
+        "type": "file",
+        "z": "fa981f8e.ad058",
+        "name": "Stoppe Button-Aktivität",
+        "filename": "/home/pi/DTDokuTool/temp/vorlesen.tmp",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "delete",
+        "encoding": "none",
+        "x": 350,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "24f96e92.34616a",
+        "type": "file",
+        "z": "58a4f51e.4fa07c",
+        "name": "Starte Button-Aktivität",
+        "filename": "/home/pi/DTDokuTool/temp/vorlesen.tmp",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 320,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f22731e5.bc8a88",
+        "type": "debug",
+        "z": "1a384a35.536d3e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e084512b.a805",
+        "type": "rc522",
+        "z": "1a384a35.536d3e",
+        "name": "",
+        "blockedFor": 5,
+        "x": 230,
+        "y": 180,
+        "wires": [
+            [
+                "f22731e5.bc8a88"
+            ]
+        ]
+    },
+    {
+        "id": "f9823a21.b1bd08",
+        "type": "function",
+        "z": "91eeb9f1.ee22b",
+        "name": "Set Topic",
+        "func": "msg.topic = 'Auth';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 800,
+        "y": 260,
+        "wires": [
+            [
+                "67e3ef21.9baeb8"
+            ]
+        ]
+    },
+    {
+        "id": "67e3ef21.9baeb8",
+        "type": "Cache in",
+        "z": "91eeb9f1.ee22b",
+        "name": "Auth Cache",
+        "cache": "72df7010.ad41e",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "authOld",
+        "useString": false,
+        "outputs": 1,
+        "x": 970,
+        "y": 260,
+        "wires": [
+            [
+                "d4027589.b58908",
+                "a53fafd8.45831",
+                "ff37f175.842778"
+            ]
+        ]
+    },
+    {
+        "id": "b47ee29d.d14a1",
+        "type": "switch",
+        "z": "91eeb9f1.ee22b",
+        "name": "Neu gestartet?",
+        "property": "newStart",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2220,
+        "y": 320,
+        "wires": [
+            [
+                "214688c9.ff17e"
+            ]
+        ]
+    },
+    {
+        "id": "37194af9.03cafe",
+        "type": "debug",
+        "z": "91eeb9f1.ee22b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "newStart",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2220,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "d4027589.b58908",
+        "type": "debug",
+        "z": "91eeb9f1.ee22b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "authOld",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a53fafd8.45831",
+        "type": "function",
+        "z": "91eeb9f1.ee22b",
+        "name": "Token needed?",
+        "func": "//Neuer Token, wenn noh kein Token vorhanden, oder Token nur noch höchstens 10 min gültig\nif (msg.authOld === null || msg.authOld.accessToken === '' || msg.authOld.expireTime - 600000 < Date.now()) {\n    msg.test='Token needed';\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1160,
+        "y": 260,
+        "wires": [
+            [
+                "d26fd32e.8eb6a",
+                "cfed927a.5a115"
+            ]
+        ]
+    },
+    {
+        "id": "cfed927a.5a115",
+        "type": "debug",
+        "z": "91eeb9f1.ee22b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "test",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1360,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "9096da00.9dddf",
+        "type": "Cache out",
+        "z": "91eeb9f1.ee22b",
+        "name": "Auth Cache",
+        "cache": "72df7010.ad41e",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "auth",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 730,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "ff37f175.842778",
+        "type": "function",
+        "z": "91eeb9f1.ee22b",
+        "name": "",
+        "func": "if (msg.authOld !== null && msg.authOld.accessToken === '') {\n    msg.payload = 'Verbindung wieder hergestellt!';\n    msg.LED = 'green'\n    msg.topic = 'LED';\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1160,
+        "y": 320,
+        "wires": [
+            [
+                "58638fd6.696b88",
+                "c2df9c1e.b157a",
+                "72a8dd44.bcc9c4"
+            ]
+        ]
+    },
+    {
+        "id": "58638fd6.696b88",
+        "type": "link out",
+        "z": "91eeb9f1.ee22b",
+        "name": "CheckConnection Failed OUT",
+        "links": [
+            "159cc6d3.99e7f1",
+            "2ec0c957.2d992e",
+            "ac070014.97d12"
+        ],
+        "x": 1315,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "c868902a.0132",
+        "type": "function",
+        "z": "91eeb9f1.ee22b",
+        "name": "Set Topic",
+        "func": "msg.topic = 'Auth';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 170,
+        "y": 420,
+        "wires": [
+            [
+                "479f39de.636a28"
+            ]
+        ]
+    },
+    {
+        "id": "479f39de.636a28",
+        "type": "Cache in",
+        "z": "91eeb9f1.ee22b",
+        "name": "Auth Cache",
+        "cache": "72df7010.ad41e",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "authOld",
+        "useString": false,
+        "outputs": 1,
+        "x": 350,
+        "y": 420,
+        "wires": [
+            [
+                "1e3c882e.98ac9"
+            ]
+        ]
+    },
+    {
+        "id": "ddb02ebf.75afb8",
+        "type": "debug",
+        "z": "91eeb9f1.ee22b",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "4c4b94d2.757194",
+        "type": "function",
+        "z": "fa981f8e.ad058",
+        "name": "",
+        "func": "let msg1 = msg;\nlet msg2 = msg;\nconst token = msg.auth.accessToken;\n\nmsg1.auth.accessToken = '';\n\nmsg2.payload = msg.team;\nmsg2.headers = {\n    Authorization: \"Bearer \" + token\n}\n\nreturn [msg1, msg2];\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1260,
+        "y": 240,
+        "wires": [
+            [
+                "651e34f8.b4c314"
+            ],
+            [
+                "d90b59da.4d91d"
+            ]
+        ]
+    },
+    {
+        "id": "b13733a7.c1cb88",
+        "type": "function",
+        "z": "fa981f8e.ad058",
+        "name": "Set Topic",
+        "func": "msg.topic = 'Auth';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 950,
+        "y": 240,
+        "wires": [
+            [
+                "3324ee8b.2628f2"
+            ]
+        ]
+    },
+    {
+        "id": "3324ee8b.2628f2",
+        "type": "Cache in",
+        "z": "fa981f8e.ad058",
+        "name": "Auth Cache",
+        "cache": "72df7010.ad41e",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "auth",
+        "useString": false,
+        "outputs": 1,
+        "x": 1110,
+        "y": 240,
+        "wires": [
+            [
+                "4c4b94d2.757194"
+            ]
+        ]
+    },
+    {
+        "id": "91ba4e0a.913898",
+        "type": "function",
+        "z": "e837e78f.fd8d2",
+        "name": "Aus",
+        "func": "msg.payload = 0;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 990,
+        "y": 220,
+        "wires": [
+            [
+                "91f9e48c.6fc088"
+            ]
+        ]
+    },
+    {
+        "id": "91f9e48c.6fc088",
+        "type": "rpi-gpio out",
+        "z": "e837e78f.fd8d2",
+        "name": "Blau LED",
+        "pin": "29",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 1140,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "93a21868.9fbc88",
+        "type": "link in",
+        "z": "e837e78f.fd8d2",
+        "name": "LED blau aus",
+        "links": [
+            "f8a086a8.999a48",
+            "e237d571.c0474",
+            "fe9cadd1.3d9a58",
+            "dd946b7a.1c9208",
+            "923798df.4c6e5",
+            "2ced9932.874a66",
+            "bf6b0339.640d88",
+            "8511097f.39628",
+            "880dd996.092318",
+            "d352ba5.93ae9c8",
+            "75c5c18f.24f198",
+            "e516514a.bfd468",
+            "49709571.360f5c",
+            "ea3db6ad.0daec8",
+            "ac4f8ecc.f4dc4",
+            "7640b671.24eb98",
+            "6307c7e0.32083",
+            "e093623e.deea68"
+        ],
+        "x": 855,
+        "y": 220,
+        "wires": [
+            [
+                "91ba4e0a.913898"
+            ]
+        ]
+    },
+    {
+        "id": "c2df9c1e.b157a",
+        "type": "Cache out",
+        "z": "91eeb9f1.ee22b",
+        "name": "LED Cache",
+        "cache": "156356e0.c1e8a9",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "LED",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 1370,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "fa7e2c8c.1fc26",
+        "type": "function",
+        "z": "91eeb9f1.ee22b",
+        "name": "Speichere LED",
+        "func": "msg.LED = 'red'\nmsg.topic = 'LED';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 740,
+        "y": 480,
+        "wires": [
+            [
+                "65de1f75.aab8c8"
+            ]
+        ]
+    },
+    {
+        "id": "65de1f75.aab8c8",
+        "type": "Cache out",
+        "z": "91eeb9f1.ee22b",
+        "name": "LED Cache",
+        "cache": "156356e0.c1e8a9",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "LED",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 930,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "8ab5e451.d672f8",
+        "type": "function",
+        "z": "91eeb9f1.ee22b",
+        "name": "Speichere LED",
+        "func": "msg.LED = 'green'\nmsg.topic = 'LED';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "87c496ad.b1a28"
+            ]
+        ]
+    },
+    {
+        "id": "87c496ad.b1a28",
+        "type": "Cache out",
+        "z": "91eeb9f1.ee22b",
+        "name": "LED Cache",
+        "cache": "156356e0.c1e8a9",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "LED",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 530,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "842b5d5b.a355e",
+        "type": "function",
+        "z": "c5dd90c6.564fd8",
+        "name": "Speichere LED",
+        "func": "msg.LED = 'green';\nmsg.topic = 'LED';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3300,
+        "y": 240,
+        "wires": [
+            [
+                "35a5442f.f8677c"
+            ]
+        ]
+    },
+    {
+        "id": "35a5442f.f8677c",
+        "type": "Cache out",
+        "z": "c5dd90c6.564fd8",
+        "name": "LED Cache",
+        "cache": "156356e0.c1e8a9",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "LED",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 3470,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "20555e95.a1999a",
+        "type": "function",
+        "z": "c5dd90c6.564fd8",
+        "name": "Speichere LED",
+        "func": "msg.LED = 'blue';\nmsg.topic = 'LED';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2640,
+        "y": 180,
+        "wires": [
+            [
+                "5d50e9e7.eaabb8"
+            ]
+        ]
+    },
+    {
+        "id": "5d50e9e7.eaabb8",
+        "type": "Cache out",
+        "z": "c5dd90c6.564fd8",
+        "name": "LED Cache",
+        "cache": "156356e0.c1e8a9",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "LED",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 2810,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c07f685e.23c53",
+        "type": "function",
+        "z": "c5dd90c6.564fd8",
+        "name": "Speichere LED",
+        "func": "msg.LED = 'green'\nmsg.topic = 'LED';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 300,
+        "y": 240,
+        "wires": [
+            [
+                "2b1cd43e.05e314"
+            ]
+        ]
+    },
+    {
+        "id": "2b1cd43e.05e314",
+        "type": "Cache out",
+        "z": "c5dd90c6.564fd8",
+        "name": "LED Cache",
+        "cache": "156356e0.c1e8a9",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "LED",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 470,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "70e1728b.eef5f4",
+        "type": "link in",
+        "z": "e837e78f.fd8d2",
+        "name": "Rot 5s",
+        "links": [
+            "10e7a36b.4125e5",
+            "216cbbde.e6303c",
+            "62d94aa.700bbb4",
+            "513bf74.0b6f708",
+            "8cd58275.34cc78"
+        ],
+        "x": 195,
+        "y": 620,
+        "wires": [
+            [
+                "1fc92166.cd172f",
+                "fd653ba7.a0c42",
+                "badfe59e.0e11c8"
+            ]
+        ]
+    },
+    {
+        "id": "1fc92166.cd172f",
+        "type": "function",
+        "z": "e837e78f.fd8d2",
+        "name": "Speichere LED",
+        "func": "msg.LED = 'red';\nmsg.topic = 'LED';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 350,
+        "y": 620,
+        "wires": [
+            [
+                "6a60ffb0.7097b8"
+            ]
+        ]
+    },
+    {
+        "id": "6a60ffb0.7097b8",
+        "type": "Cache out",
+        "z": "e837e78f.fd8d2",
+        "name": "LED Cache",
+        "cache": "156356e0.c1e8a9",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "LED",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 520,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "fd653ba7.a0c42",
+        "type": "delay",
+        "z": "e837e78f.fd8d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 350,
+        "y": 560,
+        "wires": [
+            [
+                "70252229.45158c",
+                "75c5c18f.24f198"
+            ]
+        ]
+    },
+    {
+        "id": "badfe59e.0e11c8",
+        "type": "link out",
+        "z": "e837e78f.fd8d2",
+        "name": "LEDs schalten",
+        "links": [
+            "216feaec.6ddb6e"
+        ],
+        "x": 285,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "70252229.45158c",
+        "type": "function",
+        "z": "e837e78f.fd8d2",
+        "name": "Speichere LED",
+        "func": "msg.LED = 'green';\nmsg.topic = 'LED';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 590,
+        "y": 500,
+        "wires": [
+            [
+                "3306012.113307e"
+            ]
+        ]
+    },
+    {
+        "id": "3306012.113307e",
+        "type": "Cache out",
+        "z": "e837e78f.fd8d2",
+        "name": "LED Cache",
+        "cache": "156356e0.c1e8a9",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "LED",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 760,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "7bc781ca.8249",
+        "type": "link in",
+        "z": "e837e78f.fd8d2",
+        "name": "Rot 7s",
+        "links": [],
+        "x": 205,
+        "y": 880,
+        "wires": [
+            [
+                "27292b8d.34c464",
+                "235a7136.620856",
+                "c784856e.30f758"
+            ]
+        ]
+    },
+    {
+        "id": "d5bf6162.f78a18",
+        "type": "Cache out",
+        "z": "e837e78f.fd8d2",
+        "name": "LED Cache",
+        "cache": "156356e0.c1e8a9",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "LED",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 530,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "27292b8d.34c464",
+        "type": "delay",
+        "z": "e837e78f.fd8d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "7",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 360,
+        "y": 820,
+        "wires": [
+            [
+                "e516514a.bfd468",
+                "fa301d2f.41b35"
+            ]
+        ]
+    },
+    {
+        "id": "235a7136.620856",
+        "type": "link out",
+        "z": "e837e78f.fd8d2",
+        "name": "LEDs schalten",
+        "links": [
+            "216feaec.6ddb6e"
+        ],
+        "x": 295,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "195db937.fa04cf",
+        "type": "Cache out",
+        "z": "e837e78f.fd8d2",
+        "name": "LED Cache",
+        "cache": "156356e0.c1e8a9",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "LED",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 770,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "43add114.b69088",
+        "type": "link in",
+        "z": "e837e78f.fd8d2",
+        "name": "Rot 10s",
+        "links": [],
+        "x": 205,
+        "y": 1100,
+        "wires": [
+            [
+                "7c47a1f5.12a4d",
+                "bad2179b.ab7598",
+                "44104c7c.c016c4"
+            ]
+        ]
+    },
+    {
+        "id": "ec031b96.199718",
+        "type": "Cache out",
+        "z": "e837e78f.fd8d2",
+        "name": "LED Cache",
+        "cache": "156356e0.c1e8a9",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "LED",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 530,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "7c47a1f5.12a4d",
+        "type": "delay",
+        "z": "e837e78f.fd8d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 370,
+        "y": 1040,
+        "wires": [
+            [
+                "49709571.360f5c",
+                "46702527.8bf274"
+            ]
+        ]
+    },
+    {
+        "id": "bad2179b.ab7598",
+        "type": "link out",
+        "z": "e837e78f.fd8d2",
+        "name": "LEDs schalten",
+        "links": [
+            "216feaec.6ddb6e"
+        ],
+        "x": 295,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "4f416a80.53cb2c",
+        "type": "Cache out",
+        "z": "e837e78f.fd8d2",
+        "name": "LED Cache",
+        "cache": "156356e0.c1e8a9",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "LED",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 770,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "49709571.360f5c",
+        "type": "link out",
+        "z": "e837e78f.fd8d2",
+        "name": "LEDs schalten",
+        "links": [
+            "159cc6d3.99e7f1",
+            "93a21868.9fbc88",
+            "bde9a33e.acae3"
+        ],
+        "x": 535,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "e516514a.bfd468",
+        "type": "link out",
+        "z": "e837e78f.fd8d2",
+        "name": "LEDs schalten",
+        "links": [
+            "159cc6d3.99e7f1",
+            "93a21868.9fbc88",
+            "bde9a33e.acae3"
+        ],
+        "x": 535,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "75c5c18f.24f198",
+        "type": "link out",
+        "z": "e837e78f.fd8d2",
+        "name": "LEDs schalten",
+        "links": [
+            "159cc6d3.99e7f1",
+            "93a21868.9fbc88",
+            "bde9a33e.acae3"
+        ],
+        "x": 525,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "7640b671.24eb98",
+        "type": "link out",
+        "z": "e837e78f.fd8d2",
+        "name": "",
+        "links": [
+            "93a21868.9fbc88",
+            "a03fa074.c74a18"
+        ],
+        "x": 295,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "6a0ec257.7763bc",
+        "type": "link out",
+        "z": "e837e78f.fd8d2",
+        "name": "",
+        "links": [
+            "a03fa074.c74a18",
+            "bde9a33e.acae3"
+        ],
+        "x": 295,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "ac4f8ecc.f4dc4",
+        "type": "link out",
+        "z": "e837e78f.fd8d2",
+        "name": "",
+        "links": [
+            "93a21868.9fbc88",
+            "bde9a33e.acae3"
+        ],
+        "x": 295,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "8e7b9b77.ba4cf",
+        "type": "function",
+        "z": "91eeb9f1.ee22b",
+        "name": "Speichere Connection",
+        "func": "msg.connection = true;\nmsg.topic = 'Connection';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 880,
+        "y": 100,
+        "wires": [
+            [
+                "f5cc1ba8.45a7a8"
+            ]
+        ]
+    },
+    {
+        "id": "f5cc1ba8.45a7a8",
+        "type": "Cache out",
+        "z": "91eeb9f1.ee22b",
+        "name": "Connection",
+        "cache": "5f061f3d.e8df88",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "connection",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 1090,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "bb5fac59.b9a13",
+        "type": "function",
+        "z": "91eeb9f1.ee22b",
+        "name": "Speichere Connection",
+        "func": "msg.connection = false;\nmsg.topic = 'Connection';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 760,
+        "y": 540,
+        "wires": [
+            [
+                "aed2c825.43dec"
+            ]
+        ]
+    },
+    {
+        "id": "aed2c825.43dec",
+        "type": "Cache out",
+        "z": "91eeb9f1.ee22b",
+        "name": "Connection",
+        "cache": "5f061f3d.e8df88",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "connection",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 970,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "3efc05e7.8b1bf2",
+        "type": "function",
+        "z": "c5dd90c6.564fd8",
+        "name": "Set Topic",
+        "func": "msg.topic = 'Connection';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 620,
+        "y": 340,
+        "wires": [
+            [
+                "ad29ad90.c48438"
+            ]
+        ]
+    },
+    {
+        "id": "ad29ad90.c48438",
+        "type": "Cache in",
+        "z": "c5dd90c6.564fd8",
+        "name": "Connection",
+        "cache": "5f061f3d.e8df88",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "connection",
+        "useString": false,
+        "outputs": 1,
+        "x": 770,
+        "y": 340,
+        "wires": [
+            [
+                "94a5d617.f99cb8",
+                "8ea7d644.c1ca38"
+            ]
+        ]
+    },
+    {
+        "id": "8ea7d644.c1ca38",
+        "type": "debug",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "connection",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "1b512baa.cf376c",
+        "type": "debug",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "connection",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1560,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "b766bea.355494",
+        "type": "file",
+        "z": "91eeb9f1.ee22b",
+        "name": "Stop Welcome",
+        "filename": "/home/pi/DTDokuTool/temp/continueWelcomeLoop.tmp",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1260,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25885bfc.f95c8c",
+        "type": "function",
+        "z": "91eeb9f1.ee22b",
+        "name": "",
+        "func": "if (msg.team === null) {\n    msg.payload = '';\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1100,
+        "y": 600,
+        "wires": [
+            [
+                "b766bea.355494"
+            ]
+        ]
+    },
+    {
+        "id": "b163648d.e27a78",
+        "type": "file",
+        "z": "91eeb9f1.ee22b",
+        "name": "Start Welcome",
+        "filename": "/home/pi/DTDokuTool/temp/continueWelcomeLoop.tmp",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1900,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4859ec0.73cf914",
+        "type": "function",
+        "z": "91eeb9f1.ee22b",
+        "name": "",
+        "func": "if (msg.team === null) {\n    msg.payload = 'doIt';\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1740,
+        "y": 440,
+        "wires": [
+            [
+                "b163648d.e27a78"
+            ]
+        ]
+    },
+    {
+        "id": "249f2f3f.11646",
+        "type": "file",
+        "z": "c5dd90c6.564fd8",
+        "name": "Start Welcome",
+        "filename": "/home/pi/DTDokuTool/temp/continueWelcomeLoop.tmp",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 420,
+        "y": 460,
+        "wires": [
+            [
+                "c5b4460a.4e0fa"
+            ]
+        ]
+    },
+    {
+        "id": "943e4168.423eb",
+        "type": "function",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "func": "msg.payload = 'doIt';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 240,
+        "y": 460,
+        "wires": [
+            [
+                "249f2f3f.11646"
+            ]
+        ]
+    },
+    {
+        "id": "97f4728d.270248",
+        "type": "Cache in",
+        "z": "370e2ea9.1227aa",
+        "name": "Team",
+        "cache": "9bf1b21f.d804f",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "team",
+        "useString": false,
+        "outputs": 1,
+        "x": 1170,
+        "y": 620,
+        "wires": [
+            [
+                "d871ae77.d2b53",
+                "67c728bd.79148",
+                "aac5c690.3a68d8"
+            ]
+        ]
+    },
+    {
+        "id": "6feeab19.e7a16c",
+        "type": "Cache in",
+        "z": "91eeb9f1.ee22b",
+        "name": "Team Data Cache",
+        "cache": "9bf1b21f.d804f",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "team",
+        "useString": false,
+        "outputs": 1,
+        "x": 930,
+        "y": 600,
+        "wires": [
+            [
+                "25885bfc.f95c8c"
+            ]
+        ]
+    },
+    {
+        "id": "e6396874.6b1b18",
+        "type": "function",
+        "z": "91eeb9f1.ee22b",
+        "name": "Topic für Cache",
+        "func": "msg.topic = 'team';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 740,
+        "y": 600,
+        "wires": [
+            [
+                "6feeab19.e7a16c"
+            ]
+        ]
+    },
+    {
+        "id": "ae5a3dc3.75b4f8",
+        "type": "Cache in",
+        "z": "91eeb9f1.ee22b",
+        "name": "Team Data Cache",
+        "cache": "9bf1b21f.d804f",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "team",
+        "useString": false,
+        "outputs": 1,
+        "x": 1570,
+        "y": 440,
+        "wires": [
+            [
+                "4859ec0.73cf914"
+            ]
+        ]
+    },
+    {
+        "id": "72a8dd44.bcc9c4",
+        "type": "function",
+        "z": "91eeb9f1.ee22b",
+        "name": "Topic für Cache",
+        "func": "msg.topic = 'team';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1380,
+        "y": 440,
+        "wires": [
+            [
+                "ae5a3dc3.75b4f8"
+            ]
+        ]
+    },
+    {
+        "id": "fa301d2f.41b35",
+        "type": "function",
+        "z": "e837e78f.fd8d2",
+        "name": "Speichere LED",
+        "func": "msg.LED = 'green';\nmsg.topic = 'LED';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 600,
+        "y": 760,
+        "wires": [
+            [
+                "195db937.fa04cf"
+            ]
+        ]
+    },
+    {
+        "id": "46702527.8bf274",
+        "type": "function",
+        "z": "e837e78f.fd8d2",
+        "name": "Speichere LED",
+        "func": "msg.LED = 'green';\nmsg.topic = 'LED';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 600,
+        "y": 980,
+        "wires": [
+            [
+                "4f416a80.53cb2c"
+            ]
+        ]
+    },
+    {
+        "id": "c784856e.30f758",
+        "type": "function",
+        "z": "e837e78f.fd8d2",
+        "name": "Speichere LED",
+        "func": "msg.LED = 'red';\nmsg.topic = 'LED';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 360,
+        "y": 880,
+        "wires": [
+            [
+                "d5bf6162.f78a18"
+            ]
+        ]
+    },
+    {
+        "id": "44104c7c.c016c4",
+        "type": "function",
+        "z": "e837e78f.fd8d2",
+        "name": "Speichere LED",
+        "func": "msg.LED = 'red';\nmsg.topic = 'LED';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 360,
+        "y": 1100,
+        "wires": [
+            [
+                "ec031b96.199718"
+            ]
+        ]
+    },
+    {
+        "id": "a7098239.3995b8",
+        "type": "function",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "func": "const phaseData = msg.payload;\nconst currentPhase = msg.phase;\n\nif (phaseData !== null && phaseData !== undefined) {\n    if (currentPhase.phase !== phaseData.phase) {\n        \n        let msg1 = {}\n        let msg2 = {}\n        let msg3 = {}\n        \n        if (phaseData.no !== 0) {\n            msg2.payload = 'Ihr beginnt jetzt mit Phase ' + phaseData.no + \n                ', ' + phaseData.phase;\n            msg3.payload = 'start';\n            msg3.phase = phaseData;\n        } else {\n            msg2.payload = 'Ihr habt gerade Phase ' + currentPhase.no + \n                ', ' + currentPhase.phase + ' beendet.';\n                msg3.payload = 'ende';\n        }\n        \n        msg1.topic = 'phase';\n        msg1.phase = phaseData;\n        \n        return [msg1, msg2, msg3];\n    }\n}",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1980,
+        "y": 360,
+        "wires": [
+            [
+                "cfcf4927.003eb8",
+                "dde36a46.7e0ff8",
+                "66bc5b7d.d8995c"
+            ],
+            [
+                "a48d45e6.3bbbc"
+            ],
+            [
+                "f3887a99.6d331"
+            ]
+        ]
+    },
+    {
+        "id": "2c884ea4.c87292",
+        "type": "Cache in",
+        "z": "84f4021c.f97ec8",
+        "name": "Phase",
+        "cache": "92a467bc.e0ce38",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "phase",
+        "useString": false,
+        "outputs": 1,
+        "x": 1510,
+        "y": 360,
+        "wires": [
+            [
+                "e27a5f8a.09df2",
+                "82c91ff8.d9dab8",
+                "bc38a269.5baca8"
+            ]
+        ]
+    },
+    {
+        "id": "70088700.bd1c08",
+        "type": "function",
+        "z": "84f4021c.f97ec8",
+        "name": "Topic für Cache",
+        "func": "msg.topic = 'phase';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1360,
+        "y": 360,
+        "wires": [
+            [
+                "2c884ea4.c87292"
+            ]
+        ]
+    },
+    {
+        "id": "cfcf4927.003eb8",
+        "type": "Cache out",
+        "z": "84f4021c.f97ec8",
+        "name": "Phase",
+        "cache": "92a467bc.e0ce38",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "phase",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 2170,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "e27a5f8a.09df2",
+        "type": "debug",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1710,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "82c91ff8.d9dab8",
+        "type": "debug",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "phase",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1710,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "dde36a46.7e0ff8",
+        "type": "debug",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2190,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "66bc5b7d.d8995c",
+        "type": "debug",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "phase",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2190,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "a48d45e6.3bbbc",
+        "type": "switch",
+        "z": "84f4021c.f97ec8",
+        "name": "Payload nicht leer?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2220,
+        "y": 420,
+        "wires": [
+            [
+                "7f595991.013a58"
+            ]
+        ]
+    },
+    {
+        "id": "7f595991.013a58",
+        "type": "link out",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "links": [
+            "2ec0c957.2d992e",
+            "ac070014.97d12"
+        ],
+        "x": 2375,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "e7459ffd.eba6f",
+        "type": "link out",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "links": [
+            "6017062c.87fa1"
+        ],
+        "x": 3095,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "dceb674a.9cba58",
+        "type": "delay",
+        "z": "84f4021c.f97ec8",
+        "name": "Warte 5s",
+        "pauseType": "delay",
+        "timeout": "6",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 2620,
+        "y": 480,
+        "wires": [
+            [
+                "8de915d0.d6211"
+            ]
+        ]
+    },
+    {
+        "id": "f3887a99.6d331",
+        "type": "switch",
+        "z": "84f4021c.f97ec8",
+        "name": "Phase begonnen?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "start",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ende",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2210,
+        "y": 500,
+        "wires": [
+            [
+                "e7343e1b.5a42d"
+            ],
+            [
+                "a527e281.9e5f5"
+            ]
+        ]
+    },
+    {
+        "id": "bc38a269.5baca8",
+        "type": "json",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1650,
+        "y": 360,
+        "wires": [
+            [
+                "14e51333.fbf37d"
+            ]
+        ]
+    },
+    {
+        "id": "14e51333.fbf37d",
+        "type": "switch",
+        "z": "84f4021c.f97ec8",
+        "name": "Ist eine Phase?",
+        "property": "payload.phase",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ERROR",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1800,
+        "y": 360,
+        "wires": [
+            [
+                "d0d8d3b5.cb5f6"
+            ],
+            [
+                "a7098239.3995b8"
+            ]
+        ]
+    },
+    {
+        "id": "8cd58275.34cc78",
+        "type": "link out",
+        "z": "84f4021c.f97ec8",
+        "name": "LEDs schalten",
+        "links": [
+            "2ec0c957.2d992e",
+            "70e1728b.eef5f4",
+            "ac070014.97d12"
+        ],
+        "x": 2195,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "d0d8d3b5.cb5f6",
+        "type": "function",
+        "z": "84f4021c.f97ec8",
+        "name": "Error Ausgabe",
+        "func": "msg.payload = 'Das ist leider keine Phasen-Figur!';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2040,
+        "y": 220,
+        "wires": [
+            [
+                "8cd58275.34cc78"
+            ]
+        ]
+    },
+    {
+        "id": "8de915d0.d6211",
+        "type": "Cache in",
+        "z": "84f4021c.f97ec8",
+        "name": "Phase",
+        "cache": "92a467bc.e0ce38",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "payload",
+        "useString": false,
+        "outputs": 1,
+        "x": 2770,
+        "y": 480,
+        "wires": [
+            [
+                "40c2f38b.3b7204"
+            ]
+        ]
+    },
+    {
+        "id": "e7343e1b.5a42d",
+        "type": "function",
+        "z": "84f4021c.f97ec8",
+        "name": "Topic für Cache",
+        "func": "msg.topic = 'start';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2420,
+        "y": 480,
+        "wires": [
+            [
+                "dceb674a.9cba58",
+                "5cb4f2b7.e9547c"
+            ]
+        ]
+    },
+    {
+        "id": "5cb4f2b7.e9547c",
+        "type": "Cache out",
+        "z": "84f4021c.f97ec8",
+        "name": "Phase",
+        "cache": "92a467bc.e0ce38",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "payload",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 2610,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "a527e281.9e5f5",
+        "type": "function",
+        "z": "84f4021c.f97ec8",
+        "name": "Topic für Cache",
+        "func": "msg.topic = 'start';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2420,
+        "y": 520,
+        "wires": [
+            [
+                "2918d087.102038"
+            ]
+        ]
+    },
+    {
+        "id": "2918d087.102038",
+        "type": "Cache out",
+        "z": "84f4021c.f97ec8",
+        "name": "Phase",
+        "cache": "92a467bc.e0ce38",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "payload",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 2610,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "40c2f38b.3b7204",
+        "type": "switch",
+        "z": "84f4021c.f97ec8",
+        "name": "Phase begonnen?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "start",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2950,
+        "y": 480,
+        "wires": [
+            [
+                "e7459ffd.eba6f"
+            ]
+        ]
+    },
+    {
+        "id": "5a348b97.718464",
+        "type": "comment",
+        "z": "84f4021c.f97ec8",
+        "name": "Warum hier Unterscheidung?",
+        "info": "Um zu vermeiden, dass der \"Wenn die Beschreibung vorgelesen werden soll...\"-Text noch ausgegeben wird, obwohl eine Figur vielleicht nur kurz aufgestellt und dann wieder entfernt wurde, wird hier nochmal zwischengespeichert. ",
+        "x": 2490,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "60728a91.1b0e54",
+        "type": "http request",
+        "z": "84f4021c.f97ec8",
+        "name": "SendeTag",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://markusw.ddns.net:3000/phase",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1190,
+        "y": 360,
+        "wires": [
+            [
+                "70088700.bd1c08",
+                "a099f3dd.5bc2d"
+            ]
+        ]
+    },
+    {
+        "id": "3acb2fb9.a46ce8",
+        "type": "function",
+        "z": "84f4021c.f97ec8",
+        "name": "Set Token",
+        "func": "const token = msg.auth.accessToken;\n\nmsg.headers = {\n    Authorization: \"Bearer \" + token\n}\n\nmsg.payload = {\n    team: msg.team,\n    tag: msg.payload\n}\n\nconst uid = msg.payload.tag.uid;\nif (uid !== undefined && uid !== '') {\n    msg.payload.tag.protocolId = msg.phaseOld.protocolId;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1030,
+        "y": 360,
+        "wires": [
+            [
+                "60728a91.1b0e54",
+                "cbf1e65f.47911"
+            ]
+        ]
+    },
+    {
+        "id": "229f0def.55e742",
+        "type": "debug",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "auth",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "cd5d615e.3f6ff",
+        "type": "Cache in",
+        "z": "84f4021c.f97ec8",
+        "name": "Auth",
+        "cache": "72df7010.ad41e",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "auth",
+        "useString": false,
+        "outputs": 1,
+        "x": 290,
+        "y": 360,
+        "wires": [
+            [
+                "f75f3fdd.9c24c8",
+                "8ce0619.0ebcfa",
+                "15e76e44.79c302",
+                "2ddb493c.ec7376"
+            ]
+        ]
+    },
+    {
+        "id": "941e20e8.0f92e",
+        "type": "function",
+        "z": "84f4021c.f97ec8",
+        "name": "Set Topic",
+        "func": "msg.topic = 'Auth';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 160,
+        "y": 360,
+        "wires": [
+            [
+                "cd5d615e.3f6ff"
+            ]
+        ]
+    },
+    {
+        "id": "e2fdbad7.ea09a",
+        "type": "link in",
+        "z": "84f4021c.f97ec8",
+        "name": "SendePhasenTags",
+        "links": [
+            "812306fc.5cbd1"
+        ],
+        "x": 55,
+        "y": 360,
+        "wires": [
+            [
+                "941e20e8.0f92e"
+            ]
+        ]
+    },
+    {
+        "id": "812306fc.5cbd1",
+        "type": "link out",
+        "z": "370e2ea9.1227aa",
+        "name": "SendePhasenTagsOUT",
+        "links": [
+            "e2fdbad7.ea09a"
+        ],
+        "x": 2075,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "422a0a28.fe5904",
+        "type": "debug",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5c6f6608.655e28",
+        "type": "debug",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "team",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c70b04aa.bb05b",
+        "type": "Cache in",
+        "z": "84f4021c.f97ec8",
+        "name": "Team",
+        "cache": "9bf1b21f.d804f",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "team",
+        "useString": false,
+        "outputs": 1,
+        "x": 550,
+        "y": 360,
+        "wires": [
+            [
+                "229f0def.55e742",
+                "422a0a28.fe5904",
+                "5c6f6608.655e28",
+                "3578db8.d51c124"
+            ]
+        ]
+    },
+    {
+        "id": "f75f3fdd.9c24c8",
+        "type": "function",
+        "z": "84f4021c.f97ec8",
+        "name": "Set Topic",
+        "func": "msg.topic = 'Team';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 420,
+        "y": 360,
+        "wires": [
+            [
+                "c70b04aa.bb05b"
+            ]
+        ]
+    },
+    {
+        "id": "8ce0619.0ebcfa",
+        "type": "debug",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "auth",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "2ddb493c.ec7376",
+        "type": "debug",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "15e76e44.79c302",
+        "type": "debug",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "team",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a099f3dd.5bc2d",
+        "type": "debug",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1450,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "cbf1e65f.47911",
+        "type": "debug",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "3578db8.d51c124",
+        "type": "function",
+        "z": "84f4021c.f97ec8",
+        "name": "Set Topic",
+        "func": "msg.topic = 'phase';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 700,
+        "y": 360,
+        "wires": [
+            [
+                "8d521b65.33d3"
+            ]
+        ]
+    },
+    {
+        "id": "8d521b65.33d3",
+        "type": "Cache in",
+        "z": "84f4021c.f97ec8",
+        "name": "PhaseOld",
+        "cache": "92a467bc.e0ce38",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "phaseOld",
+        "useString": false,
+        "outputs": 1,
+        "x": 850,
+        "y": 360,
+        "wires": [
+            [
+                "3acb2fb9.a46ce8",
+                "6a72b80c.e33058"
+            ]
+        ]
+    },
+    {
+        "id": "6a72b80c.e33058",
+        "type": "debug",
+        "z": "84f4021c.f97ec8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "phaseOld",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d6992182.aceb5",
+        "type": "debug",
+        "z": "c5dd90c6.564fd8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2830,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ad39e68c.bf122",
+        "type": "file",
+        "z": "c5dd90c6.564fd8",
+        "name": "Stop Welcome",
+        "filename": "/home/pi/DTDokuTool/temp/continueWelcomeLoop.tmp",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "delete",
+        "encoding": "none",
+        "x": 2640,
+        "y": 100,
+        "wires": [
+            [
+                "d6992182.aceb5"
+            ]
+        ]
+    },
+    {
+        "id": "bb9be48d.473808",
+        "type": "file",
+        "z": "c5dd90c6.564fd8",
+        "name": "Stop Reading",
+        "filename": "/home/pi/DTDokuTool/temp/continueRFID.tmp",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "delete",
+        "encoding": "none",
+        "x": 2640,
+        "y": 60,
+        "wires": [
+            [
+                "d6992182.aceb5"
+            ]
+        ]
+    },
+    {
+        "id": "651e34f8.b4c314",
+        "type": "file",
+        "z": "fa981f8e.ad058",
+        "name": "Stop Reading",
+        "filename": "/home/pi/DTDokuTool/temp/continueRFID.tmp",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "delete",
+        "encoding": "none",
+        "x": 1440,
+        "y": 220,
+        "wires": [
+            [
+                "afb990f1.daa7b"
+            ]
+        ]
+    },
+    {
+        "id": "afb990f1.daa7b",
+        "type": "Cache out",
+        "z": "fa981f8e.ad058",
+        "name": "Auth Cache",
+        "cache": "72df7010.ad41e",
+        "keyType": "msg",
+        "keyProperty": "topic",
+        "valueType": "msg",
+        "valueProperty": "auth",
+        "ttlType": "msg",
+        "ttlProperty": "",
+        "useString": false,
+        "x": 1610,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "10deb8f3.0e77df",
+        "type": "file",
+        "z": "370e2ea9.1227aa",
+        "name": "StartReading",
+        "filename": "/home/pi/DTDokuTool/temp/continueRFID.tmp",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 240,
+        "y": 560,
+        "wires": [
+            [
+                "b671dc6a.642de8"
+            ]
+        ]
+    }
+]

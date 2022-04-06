@@ -1,0 +1,22 @@
+{
+  "name": "dtdokutool_raspi",
+  "version": "0.0.1",
+  "description": "Tool for documentation support in the Design Thinking process as part of a bachelor thesis.  ",
+  "main": "index.js",
+  "keywords": [
+    "Design Thinking",
+    "Documentation",
+    "Support",
+    "Tool"
+  ],
+  "author": "Markus Watermeyer",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "2.0.4"
+  },
+  "dependencies": {
+    "mfrc522-rpi": "2.1.3",
+    "rpi-softspi": "1.0.5",
+    "onoff": "6.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+
+  dt_doku_tool_db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: DT_Doku_Tool
+      MYSQL_DATABASE: dt_doku_tool
+    volumes:
+      - dt_doku_tool_db:/var/lib/mysql
+    ports:
+      - 3306:3306
+
+  dt_doku_tool_adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+
+volumes:
+  dt_doku_tool_db:

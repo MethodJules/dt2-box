@@ -1,0 +1,33 @@
+{
+  "name": "dtdokutool",
+  "version": "0.0.1",
+  "description": "Tool for documentation support in the Design Thinking process as part of a bachelor thesis.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/dtdokutool/dtdokuiottool.git"
+  },
+  "keywords": [
+    "Design Thinking",
+    "Documentation",
+    "Support",
+    "Tool"
+  ],
+  "author": "Markus Watermeyer",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "2.0.4"
+  },
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "jsonwebtoken": "8.5.1",
+    "mariadb": "2.4.2",
+    "node-fetch": "2.6.1",
+    "@google-cloud/speech": "4.1.4"
+  }
+}

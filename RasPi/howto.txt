@@ -1,0 +1,21 @@
+1) Installieren und einrichten des RasPis mit Raspberry Pi OS und den notwendigen Hilfsmitteln (SSH, VNC, WLAN etc.) + Updates
+2) Installieren von node, NodeRED und npm mit Skript:
+    bash <(curl -sL https://raw.githubusercontent.com/node-red/raspbian-deb-package/master/resources/update-nodejs-and-nodered)
+3) Autostart von NodeRED aktivieren: sudo systemctl enable nodered.service UND sudo systemctl start nodered.service
+4) In NodeRED Nodes hinzufügen:
+    node-red-contrib-cache
+5) Google TTS einrichten: Skript erstellen (siehe sprachausgabe.sh in diesem Ordner).
+6) NPM-Pakete einrichten: npm i onoff mfrc522-rpi rpi-softspi os
+6) NodeRED-Flows zusammenstellen.
+7) Längerer Code in js-Dateien ablegen und über exec-Node ausführen.
+8) Für modularen Aufbau und weniger Komplexität lassen sich Flows über Link-Nodes miteinander verbinden.
+9) Für Mikrofoneinrichtung: https://iotbytes.wordpress.com/connect-configure-and-test-usb-microphone-and-speaker-with-raspberry-pi/
+
+Einrichtung Google Speech-ToText:
+- Google Cloud Konto einrichten, Authentification-JSON erstellen und herunterladen: https://cloud.google.com/docs/authentication/getting-started
+- Google Speech-To-Text aktivieren: ACHTUNG: nicht ganz kostenlos! Ab 60. minute pro Monat 2 Cent/min. https://cloud.google.com/service-usage/docs/enable-disable?hl=de
+- Speichere die JSON-File in /home/pi/DTDokuTool/gcAuth.json
+- Füge folgende Zeile: export GOOGLE_APPLICATION_CREDENTIALS="/home/pi/DTDokuTool/gcAuth.json"
+  an das Ende der /home/pi/.profile-Datei ein, sodass die Google Cloud Credentials bei jedem Systemstart in die Shell geladen werden.
+- Füge die folgende Zeile: process.env.GOOGLE_APPLICATION_CREDENTIALS = "/home/pi/DTDokuTool/gcAuth.json";
+  in die Datei /home/pi/.node-red/settings.js ÜBER "module.export..." ein, damit die AuthData der Google Cloud in NodeRED genutzt werden können.

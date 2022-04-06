@@ -1,0 +1,1 @@
+ Hierzu zählen verbreitete Techniken zur Konstruktion von Geschäftsmodellen \(Business Model Canvas etc\), zur Prozessmodellierung \(BPMN 2 0, EPK, Petri-Netze etc\) und für die Konzeption von Wertschöpfungsnetzwerken \(zum Beispiel mit dem Cooperation Experience-Ansatz\).
